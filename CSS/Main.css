@@ -1,0 +1,768 @@
+_* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* !PALETA DE COLORES
+*--phthalo-green: #14281dff;
+*--hunter-green: #355834ff;
+*--dark-moss-green: #525E39;
+*--antique-bronze: #6e633dff;
+*--light-french-beige: #c2a878ff;
+*--baby-powder: #f1f5f2ff; */
+
+/* Estilos Generales body */
+body {
+  background-color: #14281dff;
+  font-family: "Playfair Display", serif;
+}
+
+/* GRID */
+.gridContenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "menu menu"
+    "titulo titulo"
+    "img1 text1"
+    "benef benef"
+    "benfcont benfcont"
+    "cat cat"
+    "tit2 tit2"
+    "img2 tex2"
+    "dudas dudas"
+    "footer footer"
+    "der der";
+}
+.headerMenu {
+  grid-area: menu;
+}
+.titulo {
+  grid-area: titulo;
+}
+.imagenPrincipal {
+  grid-area: img1;
+}
+.textoPrincipal {
+  grid-area: text1;
+}
+.beneficiosTitulo {
+  grid-area: benef;
+}
+.contenedorBeneficos {
+  grid-area: benfcont;
+}
+
+.catalogo {
+  grid-area: cat;
+}
+.faqsTitulo {
+  grid-area: tit2;
+}
+.imagenFaqs {
+  grid-area: img2;
+}
+.textoFaqs {
+  grid-area: tex2;
+}
+.dudas {
+  grid-area: dudas;
+}
+.footer {
+  grid-area: footer;
+}
+.derechos {
+  grid-area: der;
+}
+
+/* Estilos index */
+
+/* logo + Menu */
+.headerMenu {
+  grid-area: menu;
+  display: flex;
+  width: 100%;
+  background-color: #f1f5f2ff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerMenu img {
+  width: 5rem;
+  height: auto;
+  padding: 10px;
+}
+
+.headerMenu nav ul li {
+  font-style: italic;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: medium;
+  font-weight: 300;
+  border-radius: 1rem;
+  background-color: #14281dff;
+  color: #f1f5f2ff;
+}
+.headerMenu nav ul li a {
+  text-decoration: none;
+  color: #c2a878ff;
+}
+.headerMenu nav ul li a:hover {
+  color: #f1f5f2ff;
+}
+
+/* titulo */
+
+.titulo {
+  background-color: #14281dff;
+}
+
+.Conoce {
+  height: 10rem;
+  grid-area: titulo;
+  font-size: 4rem;
+  color: #f1f5f2ff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.prana {
+  font-style: italic;
+  font-family: cursive;
+  font-size: 6rem;
+} /* seccion Principal */
+.imagenPrincipal {
+  background-color: #14281dff;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.imagenPrincipal img {
+  border-radius: 2rem;
+  width: 100%;
+  transition: 2seg;
+}
+
+.imagenPrincipal img:hover {
+  opacity: 100%;
+}
+.textoPrincipal h1 {
+  display: flex;
+  font-style: italic;
+  font-family: cursive;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #14281dff;
+}
+.textoPrincipal {
+  background-image: url(../Multimedia/fondo1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #14281dff;
+}
+.textoPrincipal p {
+  background-color: #f1f5f2ff;
+  border-radius: 2rem;
+  margin: 3rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+.imagenPrincipal a {
+  align-self: flex-end;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  margin-bottom: 0.5rem;
+  border-radius: 2rem;
+  background: linear-gradient(to bottom, #14281dff, #355834ff);
+  color: #c2a878ff;
+  text-decoration: none;
+  position: absolute;
+}
+
+.imagenPrincipal a h4:hover {
+  color: #f1f5f2ff;
+}
+/* Seccion Beneficios */
+.beneficiosTitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f2ff;
+  color: #14281dff;
+  height: 3rem;
+  font-size: larger;
+}
+
+.contenedorBeneficos {
+  position: relative;
+  height: 19rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f1f5f2ff;
+}
+.beneficio1 {
+  background-image: url(../Multimedia/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 13rem; /* ANCHO */
+  height: 13rem; /* ALTO */
+  margin: 30px 30px 30px 30px;
+}
+
+.beneficio2 {
+  background-image: url(../Multimedia/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 13rem; /* ANCHO */
+  height: 13rem; /* ALTO */
+  margin: 30px;
+}
+
+.beneficio3 {
+  background-image: url(../Multimedia/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 13rem; /* ANCHO */
+  height: 13rem; /* ALTO */
+  margin: 30px;
+}
+
+.escribinos {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 2rem;
+  border-top: Solid 3px #c2a878ff;
+  border-bottom: Solid 3px #c2a878ff;
+  border-left: solid 3px #c2a878ff;
+  border-right: solid 3px #c2a878ff;
+  padding: 10px;
+  border: 1px;
+  margin-top: 17rem;
+}
+.escribinos a {
+  border-top: Solid 3px #c2a878ff;
+  border-bottom: Solid 3px #c2a878ff;
+  border-left: solid 3px #c2a878ff;
+  border-right: solid 3px #c2a878ff;
+  padding: 10px;
+  background-color: #14281dff;
+  text-decoration: none;
+  color: #c2a878ff;
+  border-radius: 2rem;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+.escribinos a:hover {
+  background-color: #f1f5f2ff;
+  color: #c2a878ff;
+}
+
+/* Seccion Catalogo */
+.catalogo {
+  background-color: #14281dff;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catalogo img {
+  position: relative;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+.botonCatalogo {
+  position: absolute;
+  background: linear-gradient(to bottom, #6e633dff, #c2a878ff);
+  width: 8rem;
+  height: 2rem;
+  margin-top: 17rem;
+  margin-left: 20rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.botonCatalogo a {
+  color: #14281dff;
+  font-size: 1.45rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.botonCatalogo a:hover {
+  color: #f1f5f2ff;
+}
+/* Seccion Faqs */
+.faqsTitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f2ff;
+  color: #14281dff;
+  font-size: larger;
+}
+
+.imagenFaqs {
+  background-color: #14281dff;
+  display: flex;
+  justify-content: center;
+}
+.imagenFaqs img {
+  position: relative;
+  border-radius: 2rem;
+  margin: 2rem;
+  width: 100%;
+}
+.textoFaqs {
+  margin: 2rem;
+  height: 15rem;
+  background-color: #f1f5f2ff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  color: #14281dff;
+}
+.textoFaqs p {
+  display: flex;
+  border-radius: 2rem;
+  text-align: start;
+  padding-right: 0.5rem;
+  padding-left: 2rem;
+  background-color: #f1f5f2ff;
+}
+.imagenFaqs a {
+  position: absolute;
+  text-align: center;
+  align-self: flex-end;
+  text-decoration: none;
+}
+.imagenFaqs a h2 {
+  font-size: 2rem;
+  background-color: rgba(53, 88, 52, 0.721);
+  color: #14281dff;
+  width: 8rem;
+  border-radius: 5rem;
+  margin-bottom: 3.5rem;
+}
+.imagenFaqs a h2:hover {
+  color: #f1f5f2ff;
+}
+/* Seccion Dudas */
+.dudas {
+  background-color: #c2a878ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dudas h2 {
+  color: #14281dff;
+}
+.dudas h3 {
+  color: #355834ff;
+  border-radius: 1rem;
+  padding: 5px;
+  font-weight: 600;
+  background-color: #f1f5f2ff;
+}
+.dudas h3:hover {
+  color: #c2a878ff;
+  background-color: #14281dff;
+}
+
+.dudas a {
+  text-decoration: none;
+}
+
+.dudas h4 {
+  margin-top: 1rem;
+  font-size: small;
+  color: #14281dff;
+  border-top: Solid 3px #14281dff;
+  border-bottom: Solid 3px #14281dff;
+  border-left: solid 3px #14281dff;
+  border-right: solid 3px #14281dff;
+  padding: 10px;
+}
+.dudas h4:hover {
+  color: #c2a878ff;
+  background-color: #f1f5f2ff;
+}
+
+/* Seccion Footer */
+footer {
+  background-color: #f1f5f2ff;
+}
+.logoFooter {
+  width: 3rem;
+  height: auto;
+  padding: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuFooter ul {
+  text-align: center;
+}
+.menuFooter ul li {
+  color: #14281dff;
+  font-style: italic;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #14281dff;
+  border-radius: 1rem;
+  color: #f1f5f2ff;
+}
+.menuFooter ul li a {
+  color: #c2a878ff;
+  text-decoration: none;
+}
+.menuFooter ul li a:hover {
+  color: #f1f5f2ff;
+}
+.redesFlotantes img {
+  width: 2rem;
+  padding: 3px;
+  display: block;
+}
+
+.redesFlotantes {
+  position: fixed;
+  right: 0.2rem;
+  bottom: 50%;
+}
+.whatsapp img {
+  width: 3rem;
+  height: auto;
+  padding: 10px;
+}
+
+.derechos {
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+  font-weight: 400;
+  background-color: #c2a878ff;
+}
+
+/* !MOBILE */
+
+@media (max-width: 500px) {
+  .gridContenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "menu "
+      "titulo "
+      "img1 "
+      "benef "
+      "benfcont "
+      "cat "
+      "tit2 "
+      "img2 "
+      "dudas "
+      "footer "
+      "der ";
+  }
+  .headerMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f2ff;
+    text-align: center;
+  }
+  .headerMenu nav ul li {
+    display: block;
+  }
+
+  .textoPrincipal {
+    display: none;
+  }
+
+  .textoFaqs {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f2ff;
+    text-align: center;
+  }
+  .footer nav ul li {
+    display: block;
+  }
+}
+
+/* !Tablet */
+
+@media (max-width: 768px) {
+  .imagenFaqs a h2 {
+    font-size: medium;
+    width: 4rem;
+  }
+
+  .textoPrincipal a {
+    height: 2rem;
+  }
+}
+
+/* ?PAGINA NOSOTROS */
+
+/* TITULO Nosotros */
+
+.tituloNosotros {
+  background-color: #14281dff;
+  color: #f1f5f2ff;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+/* Textos Nosotros */
+
+.textonosotros1 {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  color: #14281dff;
+  background-color: #f1f5f2ff;
+}
+.textonosotros1 h2 {
+  color: #14281dff;
+  font-style: italic;
+}
+.textonosotros2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  color: #14281dff;
+  background-color: #f1f5f2ff;
+}
+.textonosotros2 h2 {
+  color: #14281dff;
+  font-style: italic;
+}
+
+.textonosotros3 {
+  display: flex;
+  padding: 0.5rem;
+  color: #14281dff;
+  background-color: #f1f5f2ff;
+}
+.textonosotros3 a {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(53, 88, 52, 0.721);
+  color: #14281dff;
+  font-size: large;
+  text-decoration: none;
+}
+.textonosotros3 a:hover {
+  color: #f1f5f2ff;
+}
+
+.textonosotros4 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: #14281dff;
+  background-color: #f1f5f2ff;
+}
+.botonCatalogoNos {
+  text-decoration: none;
+}
+
+.botonCatalogoNos h2 {
+  padding: 1.1rem;
+  border-radius: 2rem;
+  background-color: rgba(53, 88, 52, 0.721);
+  color: #14281dff;
+  font-size: large;
+}
+.botonCatalogoNos h2:hover {
+  color: #f1f5f2ff;
+}
+
+/* IMAGENES */
+.fotonosotros1 {
+  display: flex;
+}
+.fotonosotros2 {
+  display: flex;
+}
+.fotonosotros3 {
+  display: flex;
+}
+.fotonosotros4 {
+  display: flex;
+}
+
+.fotonosotros1 img {
+  width: 100%;
+}
+.fotonosotros2 img {
+  width: 100%;
+}
+.fotonosotros3 img {
+  width: 100%;
+}
+.fotonosotros4 img {
+  width: 100%;
+}
+/* Grid Nosotros */
+.gridNosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "menu menu"
+    "titulo titulo"
+    "img1 text1"
+    "text2 img2"
+    "img3 text3"
+    "text4 img4"
+    "dudas dudas"
+    "footer footer"
+    "der der";
+}
+
+.headerMenu {
+  grid-area: menu;
+}
+
+.tituloNosotros {
+  grid-area: titulo;
+}
+.fotonosotros1 {
+  grid-area: img1;
+}
+.textonosotros1 {
+  grid-area: text1;
+}
+.fotonosotros2 {
+  grid-area: img2;
+}
+.textonosotros2 {
+  grid-area: text2;
+}
+.fotonosotros3 {
+  grid-area: img3;
+}
+.textonosotros3 {
+  grid-area: text3;
+}
+.fotonosotros4 {
+  grid-area: img4;
+}
+.textonosotros4 {
+  grid-area: text4;
+}
+.dudas {
+  grid-area: dudas;
+}
+.footer {
+  grid-area: footer;
+}
+.derechos {
+  grid-area: der;
+}
+.objetivo {
+  font-style: italic;
+}
+
+/* !MOBILE NOSOTROS */
+@media (max-width: 500px) {
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "menu"
+      "titulo"
+      "img1"
+      "text1"
+      "img2"
+      "text2"
+      "img3"
+      "text3"
+      "img4"
+      "text4"
+      "dudas"
+      "footer"
+      "der";
+  }
+
+  .headerMenu {
+    display: flex;
+    background-color: #f1f5f2ff;
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f2ff;
+    text-align: center;
+  }
+
+  .textonosotros3 a {
+    padding: 0.1rem;
+    font-size: large;
+  }
+}
+/* !Tablet NOSOTROS */
+/* @media (max-width: 768px) {
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "menu menu menu menu"
+      "titulo titulo titulo titulo"
+      "img1 img1 text2 text2"
+      "text1 text1 img2 img2"
+      "img3 img3 text3 text3"
+      "text4 text4 img4 img4"
+      "dudas dudas dudas dudas"
+      "footer footer footer footer"
+      "der der der der";
+  }
+
+  .headerMenu {
+    display: flex;
+    background-color: #f1f5f2ff;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    display: flex;
+    background-color: #f1f5f2ff;
+    text-align: center;
+  }
+} */
