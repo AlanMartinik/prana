@@ -141,12 +141,8 @@ body {
 .imagenPrincipal img {
   border-radius: 2rem;
   width: 100%;
-  transition: 2seg;
 }
 
-.imagenPrincipal img:hover {
-  opacity: 100%;
-}
 .textoPrincipal h1 {
   display: flex;
   font-style: italic;
@@ -218,6 +214,11 @@ body {
   width: 13rem; /* ANCHO */
   height: 13rem; /* ALTO */
   margin: 30px 30px 30px 30px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+.beneficio1:hover {
+  filter: none;
 }
 
 .beneficio2 {
@@ -229,6 +230,11 @@ body {
   width: 13rem; /* ANCHO */
   height: 13rem; /* ALTO */
   margin: 30px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+.beneficio2:hover {
+  filter: none;
 }
 
 .beneficio3 {
@@ -239,6 +245,11 @@ body {
   width: 13rem; /* ANCHO */
   height: 13rem; /* ALTO */
   margin: 30px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+.beneficio3:hover {
+  filter: none;
 }
 
 .escribinos {
@@ -268,10 +279,12 @@ body {
   border-radius: 2rem;
   font-size: 1.45rem;
   font-weight: 600;
+  transition: all 1s;
 }
 .escribinos a:hover {
   background-color: #f1f5f2ff;
   color: #c2a878ff;
+  font-size: 2rem;
 }
 
 /* Seccion Catalogo */
@@ -324,46 +337,47 @@ body {
   justify-content: center;
 }
 .imagenFaqs img {
-  position: relative;
   border-radius: 2rem;
-  margin: 2rem;
-  width: 100%;
+  margin: 1rem;
+  width: 95%;
 }
 .textoFaqs {
-  margin: 2rem;
-  height: 15rem;
-  background-color: #f1f5f2ff;
+  background-image: url(../Multimedia/Fondo3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  border-radius: 2rem;
-  justify-content: center;
-  align-self: center;
   align-items: center;
   color: #14281dff;
 }
 .textoFaqs p {
+  font-style: italic;
+  font-weight: 700;
+  margin: 2rem;
+  height: 15rem;
   display: flex;
+  align-self: center;
+  align-items: center;
   border-radius: 2rem;
   text-align: start;
   padding-right: 0.5rem;
   padding-left: 2rem;
   background-color: #f1f5f2ff;
 }
-.imagenFaqs a {
-  position: absolute;
+.textoFaqs a {
+  margin-top: 25rem;
   text-align: center;
-  align-self: flex-end;
   text-decoration: none;
 }
-.imagenFaqs a h2 {
+.textoFaqs a h2 {
   font-size: 2rem;
   background-color: rgba(53, 88, 52, 0.721);
   color: #14281dff;
   width: 8rem;
   border-radius: 5rem;
-  margin-bottom: 3.5rem;
 }
-.imagenFaqs a h2:hover {
+.textoFaqs a h2:hover {
   color: #f1f5f2ff;
 }
 /* Seccion Dudas */
@@ -554,6 +568,26 @@ footer {
 .textonosotros1 h2 {
   color: #14281dff;
   font-style: italic;
+  animation-name: aparecertitulo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes aparecertitulo {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 .textonosotros2 {
   display: flex;
@@ -565,6 +599,9 @@ footer {
 .textonosotros2 h2 {
   color: #14281dff;
   font-style: italic;
+  animation-name: aparecertitulo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 .textonosotros3 {
@@ -613,15 +650,45 @@ footer {
 /* IMAGENES */
 .fotonosotros1 {
   display: flex;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 }
+@keyframes aparecer {
+  0% {
+    filter: grayscale(100%);
+  }
+  25% {
+    filter: grayscale(75%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  75% {
+    filter: grayscale(25%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
 .fotonosotros2 {
   display: flex;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 }
 .fotonosotros3 {
   display: flex;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 }
 .fotonosotros4 {
   display: flex;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 }
 
 .fotonosotros1 img {
