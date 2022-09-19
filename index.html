@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prana</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./CSS/Main.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +25,8 @@
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
+<!-- CSS MIO -->
+<link rel="stylesheet" href="./CSS/Main.css" />
 <body>
     <div class="gridContenedor">
 <header Class="headerMenu">
@@ -73,14 +73,33 @@
 
 </section>
 <section class="catalogo">
-            <!-- Carrousel productos -->
-            <div>
-                <img src="Multimedia/FULL.png" alt="Producto1">
-            </div>
-            <div class="botonCatalogo">
-                <a href="Paginas/Catalogo.html">Catalogo</a>
-            </div> 
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Multimedia/FULL.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Multimedia/FULL.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Multimedia/FULL.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="botonCatalogo">
+        <a href="Paginas/Catalogo.html">Catalogo</a>
+    </div> 
+
 </section>
+
 <section Class="faqsTitulo">    
     <h1>¿Cómo Funciona el CBD?</h1>
 </section>

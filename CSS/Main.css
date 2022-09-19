@@ -294,6 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .catalogo img {
   position: relative;
@@ -305,8 +306,7 @@ body {
   background: linear-gradient(to bottom, #6e633dff, #c2a878ff);
   width: 8rem;
   height: 2rem;
-  margin-top: 17rem;
-  margin-left: 20rem;
+
   border-radius: 1rem;
   text-align: center;
 }
