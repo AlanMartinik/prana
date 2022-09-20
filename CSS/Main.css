@@ -294,7 +294,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 .catalogo img {
   position: relative;
@@ -426,7 +425,7 @@ footer {
   background-color: #f1f5f2ff;
 }
 .logoFooter {
-  width: 3rem;
+  width: 5rem;
   height: auto;
   padding: 10px;
 }
@@ -438,12 +437,15 @@ footer {
 
 .menuFooter ul {
   text-align: center;
+  display: flex;
+  margin: 1rem;
 }
 .menuFooter ul li {
+  display: flex;
+  margin: 0.1rem;
   color: #14281dff;
   font-style: italic;
   font-weight: 500;
-  display: inline-block;
   padding: 10px 10px;
   background-color: #14281dff;
   border-radius: 1rem;
@@ -468,7 +470,7 @@ footer {
   bottom: 50%;
 }
 .whatsapp img {
-  width: 3rem;
+  width: 5rem;
   height: auto;
   padding: 10px;
 }
@@ -835,3 +837,69 @@ footer {
     text-align: center;
   }
 } */
+
+/* !Bootsrtap Faqs */
+
+.bg-faq {
+  background-color: #f1f5f2ff;
+}
+.navbar {
+  --bs-navbar-background-color: #14281dff;
+  --bs-navbar-color: #c2a878ff;
+  --bs-navbar-hover-color: #f1f5f2ff;
+  --bs-navbar-active-color: #f1f5f2ff;
+}
+.nav-link {
+  background-color: #14281dff;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+.nav-link:visited {
+  color: #6e633dff;
+}
+.nav-link:visited:hover {
+  color: #f1f5f2ff;
+}
+
+.headfaq h1 {
+  font-style: italic;
+  text-align: center;
+  color: #c2a878ff;
+}
+.headfaq p {
+  color: #f1f5f2ff;
+  opacity: 75%;
+}
+.accordion {
+  --bs-accordion-bg: #f1f5f2ff;
+  --bs-accordion-btn-color: #14281dff;
+  --bs-accordion-btn-focus-border-color: #c2a878ff;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25remrgba (13, 110, 253, 0.25);
+  --bs-accordion-active-color: #c2a878ff;
+  --bs-accordion-active-bg: #355834ff;
+}
+.accordion-item {
+  color: #f1f5f2ff;
+  background-color: #6e633dff;
+}
+.btn-primary {
+  --bs-btn-color: #c2a878ff;
+  --bs-btn-bg: #14281dff;
+  --bs-btn-border-color: #c2a878ff;
+  --bs-btn-hover-color: #c2a878ff;
+  --bs-btn-hover-bg: #f1f5f2ff;
+  --bs-btn-hover-border-color: #c2a878ff;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #14281dff;
+  --bs-btn-active-bg: #c2a878ff;
+  --bs-btn-active-border-color: #14281dff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.card-img-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
