@@ -16,368 +16,68 @@ body {
   background-color: #14281dff;
   font-family: "Playfair Display", serif;
 }
-
-/* GRID */
-.gridContenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "menu menu"
-    "titulo titulo"
-    "img1 text1"
-    "benef benef"
-    "benfcont benfcont"
-    "cat cat"
-    "tit2 tit2"
-    "img2 tex2"
-    "dudas dudas"
-    "footer footer"
-    "der der";
-}
-.headerMenu {
-  grid-area: menu;
-}
-.titulo {
-  grid-area: titulo;
-}
-.imagenPrincipal {
-  grid-area: img1;
-}
-.textoPrincipal {
-  grid-area: text1;
-}
-.beneficiosTitulo {
-  grid-area: benef;
-}
-.contenedorBeneficos {
-  grid-area: benfcont;
-}
-
-.catalogo {
-  grid-area: cat;
-}
-.faqsTitulo {
-  grid-area: tit2;
-}
-.imagenFaqs {
-  grid-area: img2;
-}
-.textoFaqs {
-  grid-area: tex2;
-}
-.dudas {
-  grid-area: dudas;
-}
-.footer {
-  grid-area: footer;
-}
-.derechos {
-  grid-area: der;
-}
-
-/* Estilos index */
-
-/* logo + Menu */
-.headerMenu {
-  grid-area: menu;
-  display: flex;
-  width: 100%;
+/* BOOTSTRAP General */
+.bg-faq {
   background-color: #f1f5f2ff;
-  justify-content: space-between;
-  align-items: center;
 }
-
-.headerMenu img {
-  width: 5rem;
-  height: auto;
-  padding: 10px;
+.navbar {
+  --bs-navbar-background-color: #14281dff;
+  --bs-navbar-color: #c2a878ff;
+  --bs-navbar-hover-color: #f1f5f2ff;
+  --bs-navbar-active-color: #f1f5f2ff;
 }
-
-.headerMenu nav ul li {
-  font-style: italic;
-  display: inline-block;
-  padding: 10px 10px;
-  font-size: medium;
-  font-weight: 300;
+.nav-link {
+  background-color: #14281dff;
+  margin: 0.2rem;
   border-radius: 1rem;
-  background-color: #14281dff;
-  color: #f1f5f2ff;
-}
-.headerMenu nav ul li a {
-  text-decoration: none;
-  color: #c2a878ff;
-}
-.headerMenu nav ul li a:hover {
-  color: #f1f5f2ff;
-}
-
-/* titulo */
-
-.titulo {
-  display: flex;
-  justify-content: center;
-  background-color: #14281dff;
-}
-
-.Conoce {
-  grid-area: titulo;
-  font-size: 4rem;
-  color: #f1f5f2ff;
   text-align: center;
-  font-weight: 600;
+  font-style: italic;
+}
+.nav-link:visited {
+  color: #6e633dff;
+}
+.nav-link:visited:hover {
+  color: #f1f5f2ff;
+}
+/* Bootstrap Index */
+.headindex h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #c2a878ff;
 }
 
 .prana {
   font-style: italic;
-  font-family: cursive;
-  font-size: 6rem;
-} /* seccion Principal */
-.imagenPrincipal {
-  background-color: #14281dff;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: relative;
+  font-size: 4rem;
 }
-.imagenPrincipal img {
-  border-radius: 2rem;
-  width: 100%;
-}
-
-.textoPrincipal h1 {
-  display: flex;
-  font-style: italic;
-  font-family: cursive;
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: #14281dff;
-}
-.textoPrincipal {
-  background-image: url(../Multimedia/fondo1.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  color: #14281dff;
-}
-.textoPrincipal p {
+.titulobeneficios {
+  text-align: center;
   background-color: #f1f5f2ff;
-  border-radius: 2rem;
-  margin: 3rem;
-  font-size: 0.9rem;
+  color: #c2a878ff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
-.imagenPrincipal a {
-  align-self: flex-end;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  margin-bottom: 0.5rem;
-  border-radius: 2rem;
-  background: linear-gradient(to bottom, #14281dff, #355834ff);
-  color: #c2a878ff;
-  text-decoration: none;
-  position: absolute;
-}
-
-.imagenPrincipal a h4:hover {
-  color: #f1f5f2ff;
-}
-/* Seccion Beneficios */
-.beneficiosTitulo {
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  background-color: #f1f5f2ff;
-  color: #14281dff;
-  height: 3rem;
-  font-size: larger;
-}
-
-.contenedorBeneficos {
-  position: relative;
-  height: 19rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #f1f5f2ff;
-}
-.beneficio1 {
-  background-image: url(../Multimedia/1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  width: 13rem; /* ANCHO */
-  height: 13rem; /* ALTO */
-  margin: 30px 30px 30px 30px;
+.img-thumbnail {
   filter: grayscale(100%);
-  transition: 1s;
+  transition: all 1s;
+  background-color: #f1f5f2ff;
 }
-.beneficio1:hover {
+.img-thumbnail:hover {
   filter: none;
 }
-
-.beneficio2 {
-  background-image: url(../Multimedia/2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  width: 13rem; /* ANCHO */
-  height: 13rem; /* ALTO */
-  margin: 30px;
-  filter: grayscale(100%);
-  transition: 1s;
+@media (max-width: 500px) {
+  .img-thumbnail {
+    background-color: #f1f5f2ff;
+    width: 50%;
+    margin: 0.5rem;
+  }
 }
-.beneficio2:hover {
-  filter: none;
+.textfaqs {
+  margin-top: 5rem;
 }
-
-.beneficio3 {
-  background-image: url(../Multimedia/3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 13rem; /* ANCHO */
-  height: 13rem; /* ALTO */
-  margin: 30px;
-  filter: grayscale(100%);
-  transition: 1s;
-}
-.beneficio3:hover {
-  filter: none;
-}
-
-.escribinos {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 12rem;
-  height: 2rem;
-  border-top: Solid 3px #c2a878ff;
-  border-bottom: Solid 3px #c2a878ff;
-  border-left: solid 3px #c2a878ff;
-  border-right: solid 3px #c2a878ff;
-  padding: 10px;
-  border: 1px;
-  margin-top: 17rem;
-}
-.escribinos a {
-  border-top: Solid 3px #c2a878ff;
-  border-bottom: Solid 3px #c2a878ff;
-  border-left: solid 3px #c2a878ff;
-  border-right: solid 3px #c2a878ff;
-  padding: 10px;
-  background-color: #14281dff;
-  text-decoration: none;
-  color: #c2a878ff;
-  border-radius: 2rem;
-  font-size: 1.45rem;
-  font-weight: 600;
-  transition: all 1s ease-in-out;
-}
-.escribinos a:hover {
-  background-color: #f1f5f2ff;
-  color: #c2a878ff;
-  transform: scale(1.2);
-}
-
-/* Seccion Catalogo */
-.catalogo {
-  background-color: #14281dff;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.catalogo img {
-  position: relative;
-  width: 20rem;
-  margin-bottom: 2rem;
-}
-.botonCatalogo {
-  position: absolute;
-  background: linear-gradient(to bottom, #6e633dff, #c2a878ff);
-  width: 8rem;
-  height: 2rem;
-
-  border-radius: 1rem;
-  text-align: center;
-}
-
-.botonCatalogo a {
-  color: #14281dff;
-  font-size: 1.45rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-.botonCatalogo a:hover {
-  color: #f1f5f2ff;
-}
-/* Seccion Faqs */
-.faqsTitulo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #f1f5f2ff;
-  color: #14281dff;
-  font-size: larger;
-}
-
-.imagenFaqs {
-  background-color: #14281dff;
-  display: flex;
-  justify-content: center;
-}
-.imagenFaqs img {
-  border-radius: 2rem;
-  margin: 1rem;
-  width: 95%;
-}
-.textoFaqs {
-  background-image: url(../Multimedia/Fondo3.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #14281dff;
-}
-.textoFaqs p {
-  font-style: italic;
-  font-weight: 700;
-  margin: 2rem;
-  height: 15rem;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  border-radius: 2rem;
-  text-align: start;
-  padding-right: 0.5rem;
-  padding-left: 2rem;
-  background-color: #f1f5f2ff;
-}
-.textoFaqs a {
-  margin-top: 25rem;
-  text-align: center;
-  text-decoration: none;
-}
-.textoFaqs a h2 {
-  font-size: 2rem;
-  background-color: rgba(53, 88, 52, 0.721);
-  color: #14281dff;
-  width: 8rem;
-  border-radius: 5rem;
-}
-.textoFaqs a h2:hover {
-  color: #f1f5f2ff;
+.verfaqs {
+  margin-top: 5rem;
 }
 /* Seccion Dudas */
 .dudas {
@@ -392,7 +92,7 @@ body {
 .dudas h3 {
   color: #355834ff;
   border-radius: 1rem;
-  padding: 5px;
+  padding: 8px;
   font-weight: 600;
   background-color: #f1f5f2ff;
 }
@@ -404,7 +104,6 @@ body {
 .dudas a {
   text-decoration: none;
 }
-
 .dudas h4 {
   margin-top: 1rem;
   font-size: small;
@@ -419,12 +118,12 @@ body {
   color: #c2a878ff;
   background-color: #f1f5f2ff;
 }
-
 /* Seccion Footer */
 footer {
   background-color: #f1f5f2ff;
 }
 .logoFooter {
+  width: 3rem;
   width: 5rem;
   height: auto;
   padding: 10px;
@@ -446,6 +145,7 @@ footer {
   color: #14281dff;
   font-style: italic;
   font-weight: 500;
+  display: inline-block;
   padding: 10px 10px;
   background-color: #14281dff;
   border-radius: 1rem;
@@ -463,84 +163,23 @@ footer {
   padding: 3px;
   display: block;
 }
-
 .redesFlotantes {
   position: fixed;
   right: 0.2rem;
   bottom: 50%;
 }
 .whatsapp img {
+  width: 3rem;
   width: 5rem;
   height: auto;
   padding: 10px;
 }
-
 .derechos {
   text-align: center;
   font-style: italic;
   font-size: small;
   font-weight: 400;
   background-color: #c2a878ff;
-}
-
-/* !MOBILE */
-
-@media (max-width: 500px) {
-  .gridContenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "menu "
-      "titulo "
-      "img1 "
-      "benef "
-      "benfcont "
-      "cat "
-      "tit2 "
-      "img2 "
-      "dudas "
-      "footer "
-      "der ";
-  }
-  .headerMenu {
-    display: flex;
-    flex-direction: column;
-    background-color: #f1f5f2ff;
-    text-align: center;
-  }
-  .headerMenu nav ul li {
-    display: block;
-  }
-
-  .textoPrincipal {
-    display: none;
-  }
-
-  .textoFaqs {
-    display: none;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #f1f5f2ff;
-    text-align: center;
-  }
-  .footer nav ul li {
-    display: block;
-  }
-}
-
-/* !Tablet */
-
-@media (max-width: 768px) {
-  .imagenFaqs a h2 {
-    font-size: medium;
-    width: 4rem;
-  }
-
-  .textoPrincipal a {
-    height: 2rem;
-  }
 }
 
 /* ?PAGINA NOSOTROS */
@@ -839,29 +478,6 @@ footer {
 } */
 
 /* !Bootsrtap Faqs */
-
-.bg-faq {
-  background-color: #f1f5f2ff;
-}
-.navbar {
-  --bs-navbar-background-color: #14281dff;
-  --bs-navbar-color: #c2a878ff;
-  --bs-navbar-hover-color: #f1f5f2ff;
-  --bs-navbar-active-color: #f1f5f2ff;
-}
-.nav-link {
-  background-color: #14281dff;
-  margin: 0.2rem;
-  border-radius: 1rem;
-  text-align: center;
-  font-style: italic;
-}
-.nav-link:visited {
-  color: #6e633dff;
-}
-.nav-link:visited:hover {
-  color: #f1f5f2ff;
-}
 
 .headfaq h1 {
   font-style: italic;
