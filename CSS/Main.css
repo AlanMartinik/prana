@@ -79,6 +79,7 @@ body {
 .verfaqs {
   margin-top: 5rem;
 }
+
 /* Seccion Dudas */
 .dudas {
   background-color: #c2a878ff;
@@ -117,6 +118,11 @@ body {
 .dudas h4:hover {
   color: #c2a878ff;
   background-color: #f1f5f2ff;
+}
+
+.carousel {
+  width: 640px;
+  height: 380px;
 }
 /* Seccion Footer */
 footer {
