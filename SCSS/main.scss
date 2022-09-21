@@ -1,0 +1,37 @@
+.dudas {
+  background-color: #c2a878ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .dudas h2 {
+    color: #14281dff;
+  }
+  .dudas h3 {
+    color: #355834ff;
+    border-radius: 1rem;
+    padding: 8px;
+    font-weight: 600;
+    background-color: #f1f5f2ff;
+  }
+  .dudas h3:hover {
+    color: #c2a878ff;
+    background-color: #14281dff;
+  }
+  .dudas a {
+    text-decoration: none;
+  }
+  .dudas h4 {
+    margin-top: 1rem;
+    font-size: small;
+    color: #14281dff;
+    border-top: Solid 3px #14281dff;
+    border-bottom: Solid 3px #14281dff;
+    border-left: solid 3px #14281dff;
+    border-right: solid 3px #14281dff;
+    padding: 10px;
+  }
+  .dudas h4:hover {
+    color: #c2a878ff;
+    background-color: #f1f5f2ff;
+  }
+}
