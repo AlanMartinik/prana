@@ -65,11 +65,21 @@ body {
 .img-thumbnail:hover {
   filter: none;
 }
+
+.btncatalogo {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
 @media (max-width: 500px) {
   .img-thumbnail {
     background-color: #f1f5f2ff;
     width: 50%;
     margin: 0.5rem;
+  }
+  .carousel {
+    width: 50%;
   }
 }
 .textfaqs {
@@ -544,4 +554,66 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+
+/* Catalogo */
+.headcatalogo h1 {
+  font-style: italic;
+  text-align: center;
+  color: #c2a878ff;
+}
+.headcatalogo p {
+  color: #f1f5f2ff;
+  opacity: 75%;
+}
+.cardfaqs {
+  --bs-card-bg: #c2a878ff;
+}
+@media (max-width: 500px) {
+  .cardfaqs {
+    width: 50%;
+  }
+}
+
+.cardfaqs h5 {
+  color: #f1f5f2ff;
+}
+.cardfaqs p {
+  color: #f1f5f2ff;
+}
+
+/* Contacto */
+.encontranos {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #c2a878ff;
+}
+.encontranos h2 {
+  text-align: center;
+  background-color: #f1f5f2ff;
+  background-color: #14281dff;
+  padding: 1rem;
+  border-radius: 2rem;
+  border-top: Solid 3px #c2a878ff;
+  border-bottom: Solid 3px #c2a878ff;
+  border-left: solid 3px #c2a878ff;
+  border-right: solid 3px #c2a878ff;
+}
+.encontranos iframe {
+  margin: 1rem;
+  width: 100%;
+}
+
+.formularios {
+  color: #f1f5f2ff;
+}
+.form-control {
+  color: #14281dff;
+  background-color: #f1f5f2ff;
+}
+.form-control:focus {
+  color: #f1f5f2ff;
+  background-color: #c2a878ff;
 }
