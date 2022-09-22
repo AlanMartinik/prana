@@ -45,7 +45,6 @@ body {
   text-align: center;
   color: #c2a878ff;
 }
-
 .prana {
   font-style: italic;
   font-size: 4rem;
@@ -184,10 +183,41 @@ footer {
   background-color: #c2a878ff;
 }
 
+/* !Menu paginas sin boostrap */
+.headerMenu {
+  background-color: #f1f5f2ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerMenu img {
+  width: 5rem;
+  height: auto;
+  padding: 10px;
+}
+.headerMenu nav ul li {
+  font-style: italic;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: medium;
+  font-weight: 300;
+  border-radius: 1rem;
+  background-color: #14281dff;
+  color: #f1f5f2ff;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+.headerMenu nav ul li a {
+  text-decoration: none;
+  color: #c2a878ff;
+}
+.headerMenu nav ul li a:hover {
+  color: #f1f5f2ff;
+}
 /* ?PAGINA NOSOTROS */
-
 /* TITULO Nosotros */
-
 .tituloNosotros {
   background-color: #14281dff;
   color: #f1f5f2ff;
@@ -196,10 +226,9 @@ footer {
   font-style: italic;
   font-family: cursive;
   font-size: 6rem;
+  padding: 1rem;
 }
-
 /* Textos Nosotros */
-
 .textonosotros1 {
   font-family: "Playfair Display", serif;
   display: flex;
@@ -246,7 +275,6 @@ footer {
   animation-duration: 2s;
   animation-timing-function: linear;
 }
-
 .textonosotros3 {
   display: flex;
   padding: 0.5rem;
@@ -264,7 +292,6 @@ footer {
 .textonosotros3 a:hover {
   color: #f1f5f2ff;
 }
-
 .textonosotros4 {
   display: flex;
   text-align: center;
@@ -278,7 +305,6 @@ footer {
 .botonCatalogoNos {
   text-decoration: none;
 }
-
 .botonCatalogoNos h2 {
   padding: 1.1rem;
   border-radius: 2rem;
@@ -289,7 +315,6 @@ footer {
 .botonCatalogoNos h2:hover {
   color: #f1f5f2ff;
 }
-
 /* IMAGENES */
 .fotonosotros1 {
   display: flex;
@@ -315,7 +340,6 @@ footer {
     filter: grayscale(0%);
   }
 }
-
 .fotonosotros2 {
   display: flex;
   animation-name: aparecer;
@@ -335,7 +359,6 @@ footer {
   animation-duration: 1.5s;
   animation-timing-function: linear;
 }
-
 .fotonosotros1 img {
   width: 100%;
 }
@@ -350,6 +373,7 @@ footer {
 }
 /* Grid Nosotros */
 .gridNosotros {
+  font-family: "Playfair Display", serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -363,11 +387,9 @@ footer {
     "footer footer"
     "der der";
 }
-
 .headerMenu {
   grid-area: menu;
 }
-
 .tituloNosotros {
   grid-area: titulo;
 }
@@ -407,7 +429,38 @@ footer {
 .objetivo {
   font-style: italic;
 }
+/* !Tablet NOSOTROS */
+@media (max-width: 768px) {
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "menu menu menu menu"
+      "titulo titulo titulo titulo"
+      "img1 text1 img2 text2"
+      "text3 img3 img4 text4"
+      "dudas dudas dudas dudas"
+      "footer footer footer footer"
+      "der der der der";
+  }
+  .fotonosotros1 {
+    width: 20rem;
+  }
 
+  .headerMenu {
+    display: flex;
+    background-color: #f1f5f2ff;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    display: flex;
+    background-color: #f1f5f2ff;
+    text-align: center;
+  }
+}
 /* !MOBILE NOSOTROS */
 @media (max-width: 500px) {
   .gridNosotros {
@@ -428,57 +481,28 @@ footer {
       "footer"
       "der";
   }
-
   .headerMenu {
     display: flex;
+    flex-direction: column;
     background-color: #f1f5f2ff;
     text-align: center;
   }
-
+  .headerMenu nav ul li {
+    display: block;
+  }
   .footer {
     display: flex;
     flex-direction: column;
     background-color: #f1f5f2ff;
     text-align: center;
   }
-
   .textonosotros3 a {
     padding: 0.1rem;
     font-size: large;
   }
 }
-/* !Tablet NOSOTROS */
-/* @media (max-width: 768px) {
-  .gridNosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "menu menu menu menu"
-      "titulo titulo titulo titulo"
-      "img1 img1 text2 text2"
-      "text1 text1 img2 img2"
-      "img3 img3 text3 text3"
-      "text4 text4 img4 img4"
-      "dudas dudas dudas dudas"
-      "footer footer footer footer"
-      "der der der der";
-  }
 
-  .headerMenu {
-    display: flex;
-    background-color: #f1f5f2ff;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .footer {
-    flex-direction: column;
-    display: flex;
-    background-color: #f1f5f2ff;
-    text-align: center;
-  }
-} */
-
+/* pagina Faqs */
 /* !Bootsrtap Faqs */
 
 .headfaq h1 {
