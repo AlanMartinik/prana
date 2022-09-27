@@ -1,0 +1,23 @@
+.headcatalogo {
+  h1 {
+    font-style: italic;
+    text-align: center;
+    color: $secundario;
+  }
+  p {
+    color: $secundarioter;
+    opacity: 75%;
+    font-family: "Open Sans";
+  }
+}
+
+.cardfaqs {
+  --bs-card-bg: $secundario;
+  h5 {
+    color: #f1f5f2ff;
+  }
+  p {
+    color: #f1f5f2ff;
+    font-family: "Open Sans";
+  }
+}

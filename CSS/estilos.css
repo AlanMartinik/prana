@@ -45,8 +45,8 @@
   font-family: "open sans"; }
 
 .nosotros a {
-  font-family: "Playfair Display", serif;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-style: italic; }
 
 .titulobeneficios {
   text-align: center;
@@ -79,11 +79,21 @@
   display: flex;
   justify-content: center;
   padding: 1rem; }
+  .btncatalogo a {
+    font-style: normal; }
 
-.textfaqs {
-  margin-top: 5rem; }
-  .textfaqs .verfaqs {
-    margin-top: 5rem; }
+.botonescribi a {
+  font-style: normal; }
+
+.textfaqs h5 {
+  font-style: italic; }
+
+.textfaqs p {
+  padding-top: 2rem;
+  font-family: "open sans"; }
+
+.verfaqs {
+  padding-top: 2rem; }
 
 .dudas {
   background-color: #c2a878ff;
@@ -97,24 +107,26 @@
     border-radius: 1rem;
     padding: 8px;
     font-weight: 600;
-    background-color: #f1f5f2ff; }
+    background-color: #f1f5f2ff;
+    transition: all 0.5s; }
     .dudas h3:hover {
       color: #c2a878ff;
       background-color: #14281dff; }
   .dudas a {
     text-decoration: none; }
-  .dudas h4 {
-    margin-top: 1rem;
-    font-size: small;
+  .dudas i {
+    font-size: 2rem;
     color: #14281dff;
-    border-top: Solid 3px #14281dff;
+    /*     border-top: Solid 3px #14281dff;
     border-bottom: Solid 3px #14281dff;
     border-left: solid 3px #14281dff;
-    border-right: solid 3px #14281dff;
-    padding: 10px; }
-    .dudas h4:hover {
-      color: #c2a878ff;
-      background-color: #f1f5f2ff; }
+    border-right: solid 3px #14281dff; */
+    transition: all 1s; }
+    .dudas i:hover {
+      color: #f1f5f2ff;
+      font-size: 2.5rem;
+      /*       background-color: #f1f5f2ff;
+ */ }
 
 _* {
   margin: 0%;
@@ -127,6 +139,7 @@ body {
 .btn-primary {
   --bs-btn-color: #c2a878ff;
   --bs-btn-bg: #14281dff;
+  font-style: italic;
   --bs-btn-border-color: #c2a878ff;
   --bs-btn-hover-color: #c2a878ff;
   --bs-btn-hover-bg: #f1f5f2ff;
@@ -205,3 +218,26 @@ body {
 
 .verfaqs {
   margin-top: 5rem; }
+
+/* Catalogo */
+@media (max-width: 576px) {
+  .cardfaqs {
+    width: 50%; } }
+
+.headcatalogo h1 {
+  font-style: italic;
+  text-align: center;
+  color: #c2a878ff; }
+
+.headcatalogo p {
+  color: #f1f5f2ff;
+  opacity: 75%;
+  font-family: "Open Sans"; }
+
+.cardfaqs {
+  --bs-card-bg: $secundario; }
+  .cardfaqs h5 {
+    color: #f1f5f2ff; }
+  .cardfaqs p {
+    color: #f1f5f2ff;
+    font-family: "Open Sans"; }

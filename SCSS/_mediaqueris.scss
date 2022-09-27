@@ -1,7 +1,7 @@
 /* Index */
 @media (max-width: 576px) {
   .img-thumbnail {
-    background-color: #f1f5f2ff;
+    background-color: $secundarioter;
     width: 50%;
     margin: 0.5rem;
   }
@@ -14,4 +14,10 @@
 }
 .verfaqs {
   margin-top: 5rem;
+}
+/* Catalogo */
+@media (max-width: 576px) {
+  .cardfaqs {
+    width: 50%;
+  }
 }
