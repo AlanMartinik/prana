@@ -13,7 +13,12 @@ _* {
 
 /* Estilos Generales body */
 body {
-  background-color: #14281dff;
+  background: linear-gradient(
+    180deg,
+    rgba(53, 88, 52, 1) 0%,
+    rgba(20, 40, 29, 1) 39%,
+    rgba(0, 0, 0, 1) 100%
+  );
   font-family: "Playfair Display", serif;
 }
 /* BOOTSTRAP General */
@@ -25,6 +30,9 @@ body {
   --bs-navbar-color: #c2a878ff;
   --bs-navbar-hover-color: #f1f5f2ff;
   --bs-navbar-active-color: #f1f5f2ff;
+}
+.navbar-brand img {
+  width: 4rem;
 }
 .nav-link {
   background-color: #14281dff;
@@ -58,12 +66,29 @@ body {
   padding: 1rem;
 }
 .img-thumbnail {
-  filter: grayscale(100%);
-  transition: all 1s;
   background-color: #f1f5f2ff;
+  animation-name: beneanim;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
-.img-thumbnail:hover {
-  filter: none;
+
+@keyframes beneanim {
+  0% {
+    filter: grayscale(100%);
+  }
+  25% {
+    filter: grayscale(75%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  75% {
+    filter: grayscale(25%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
 }
 
 .btncatalogo {
@@ -72,7 +97,7 @@ body {
   padding: 1rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .img-thumbnail {
     background-color: #f1f5f2ff;
     width: 50%;
@@ -453,9 +478,6 @@ footer {
       "footer footer footer footer"
       "der der der der";
   }
-  .fotonosotros1 {
-    width: 20rem;
-  }
 
   .headerMenu {
     display: flex;
@@ -472,7 +494,7 @@ footer {
   }
 }
 /* !MOBILE NOSOTROS */
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .gridNosotros {
     display: grid;
     grid-template-columns: 1fr;
@@ -569,7 +591,7 @@ footer {
 .cardfaqs {
   --bs-card-bg: #c2a878ff;
 }
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .cardfaqs {
     width: 50%;
   }
@@ -607,7 +629,10 @@ footer {
 }
 
 .formularios {
-  color: #f1f5f2ff;
+  background-color: #f1f5f2ff;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #14281dff;
 }
 .form-control {
   color: #14281dff;

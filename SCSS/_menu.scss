@@ -1,0 +1,27 @@
+.bg-faq {
+  background-color: #f1f5f2ff;
+}
+
+.navbar {
+  --bs-navbar-background-color: #14281dff;
+  --bs-navbar-color: #c2a878ff;
+  --bs-navbar-hover-color: #f1f5f2ff;
+  --bs-navbar-active-color: #f1f5f2ff;
+
+  .navbar-brand img {
+    width: 4rem;
+  }
+}
+.nav-link {
+  background-color: #14281dff;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-style: italic;
+  &:visited {
+    color: #6e633dff;
+    &:visited:hover {
+      color: #f1f5f2ff;
+    }
+  }
+}
