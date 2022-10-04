@@ -1,0 +1,188 @@
+.gridNosotros {
+  font-family: "Playfair Display", serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img1 text1"
+    "text2 img2"
+    "img3 text3"
+    "text4 img4";
+}
+
+.fotonosotros1 {
+  grid-area: img1;
+}
+/Multimedia/Foto1.jpg .textonosotros1 {
+  grid-area: text1;
+}
+.fotonosotros2 {
+  grid-area: text2;
+}
+.fotonosotros2 {
+  grid-area: img2;
+}
+.fotonosotros3 {
+  grid-area: img3;
+}
+.textonosotros3 {
+  grid-area: text3;
+}
+.textonosotros4 {
+  grid-area: text4;
+}
+.fotonosotros4 {
+  grid-area: img4;
+}
+.tituloNosotros {
+  background-color: $primario;
+  color: $secundarioter;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  font-family: cursive;
+  font-size: 6rem;
+  padding: 1rem;
+}
+/* Textos Nosotros */
+.textonosotros1 {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  color: $primario;
+  background-color: $secundarioter;
+}
+.textonosotros1 h2 {
+  color: $primario;
+  font-style: italic;
+  animation-name: aparecertitulo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes aparecertitulo {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.textonosotros2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  color: $primario;
+  background-color: $secundarioter;
+}
+.textonosotros2 h2 {
+  color: $primario;
+  font-style: italic;
+  animation-name: aparecertitulo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+.textonosotros3 {
+  display: flex;
+  padding: 0.5rem;
+  color: $primario;
+  background-color: $secundarioter;
+}
+.textonosotros3 a {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(53, 88, 52, 0.721);
+  color: $primario;
+  font-size: large;
+  text-decoration: none;
+}
+.textonosotros3 a:hover {
+  color: $secundarioter;
+}
+.textonosotros4 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: $primario;
+  background-color: $secundarioter;
+}
+.botonCatalogoNos {
+  text-decoration: none;
+}
+.botonCatalogoNos h2 {
+  padding: 1.1rem;
+  border-radius: 2rem;
+  background-color: rgba(53, 88, 52, 0.721);
+  color: #14281dff;
+  font-size: large;
+}
+.botonCatalogoNos h2:hover {
+  color: $secundarioter;
+}
+/* IMAGENES */
+.fotonosotros1 {
+  display: flex;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer {
+  0% {
+    filter: grayscale(100%);
+  }
+  25% {
+    filter: grayscale(75%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  75% {
+    filter: grayscale(25%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+.fotonosotros2 {
+  display: flex;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+}
+.fotonosotros3 {
+  display: flex;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+.fotonosotros4 {
+  display: flex;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+.fotonosotros1 img {
+  width: 100%;
+}
+.fotonosotros2 img {
+  width: 100%;
+}
+.fotonosotros3 img {
+  width: 100%;
+}
+.fotonosotros4 img {
+  width: 100%;
+}

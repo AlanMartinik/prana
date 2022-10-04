@@ -218,39 +218,6 @@ footer {
   background-color: #c2a878ff;
 }
 
-/* !Menu paginas sin boostrap */
-.headerMenu {
-  background-color: #f1f5f2ff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.headerMenu img {
-  width: 5rem;
-  height: auto;
-  padding: 10px;
-}
-.headerMenu nav ul li {
-  font-style: italic;
-  display: inline-block;
-  padding: 10px 10px;
-  font-size: medium;
-  font-weight: 300;
-  border-radius: 1rem;
-  background-color: #14281dff;
-  color: #f1f5f2ff;
-  margin: 0.2rem;
-  border-radius: 1rem;
-  text-align: center;
-  font-style: italic;
-}
-.headerMenu nav ul li a {
-  text-decoration: none;
-  color: #c2a878ff;
-}
-.headerMenu nav ul li a:hover {
-  color: #f1f5f2ff;
-}
 /* ?PAGINA NOSOTROS */
 /* TITULO Nosotros */
 .tituloNosotros {
@@ -412,22 +379,12 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "menu menu"
-    "titulo titulo"
     "img1 text1"
     "text2 img2"
     "img3 text3"
-    "text4 img4"
-    "dudas dudas"
-    "footer footer"
-    "der der";
+    "text4 img4";
 }
-.headerMenu {
-  grid-area: menu;
-}
-.tituloNosotros {
-  grid-area: titulo;
-}
+
 .fotonosotros1 {
   grid-area: img1;
 }
@@ -435,10 +392,10 @@ footer {
   grid-area: text1;
 }
 .fotonosotros2 {
-  grid-area: img2;
-}
-.textonosotros2 {
   grid-area: text2;
+}
+.fotonosotros2 {
+  grid-area: img2;
 }
 .fotonosotros3 {
   grid-area: img3;
@@ -446,24 +403,13 @@ footer {
 .textonosotros3 {
   grid-area: text3;
 }
-.fotonosotros4 {
-  grid-area: img4;
-}
 .textonosotros4 {
   grid-area: text4;
 }
-.dudas {
-  grid-area: dudas;
+.fotonosotros4 {
+  grid-area: img4;
 }
-.footer {
-  grid-area: footer;
-}
-.derechos {
-  grid-area: der;
-}
-.objetivo {
-  font-style: italic;
-}
+
 /* !Tablet NOSOTROS */
 @media (max-width: 768px) {
   .gridNosotros {
@@ -477,13 +423,6 @@ footer {
       "dudas dudas dudas dudas"
       "footer footer footer footer"
       "der der der der";
-  }
-
-  .headerMenu {
-    display: flex;
-    background-color: #f1f5f2ff;
-    text-align: center;
-    flex-direction: column;
   }
 
   .footer {
@@ -513,15 +452,7 @@ footer {
       "footer"
       "der";
   }
-  .headerMenu {
-    display: flex;
-    flex-direction: column;
-    background-color: #f1f5f2ff;
-    text-align: center;
-  }
-  .headerMenu nav ul li {
-    display: block;
-  }
+
   .footer {
     display: flex;
     flex-direction: column;

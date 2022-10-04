@@ -12,12 +12,12 @@
 }
 
 .cardfaqs {
-  --bs-card-bg: $secundario;
+  background-color: $secundario;
   h5 {
-    color: #f1f5f2ff;
+    color: $secundarioter;
   }
   p {
-    color: #f1f5f2ff;
+    color: $secundarioter;
     font-family: "Open Sans";
   }
 }
