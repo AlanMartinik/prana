@@ -1,18 +1,17 @@
 .gridNosotros {
   font-family: "Playfair Display", serif;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /*   display: grid;
+  grid-template-columns: 1fr 1fr; */
+  @include grid(grid, 1fr 1fr);
   grid-template-areas:
-    "img1 text1"
-    "text2 img2"
-    "img3 text3"
-    "text4 img4";
+    "img1 text1" "text2 img2"
+    "img3 text3" "text4 img4";
 }
 
 .fotonosotros1 {
   grid-area: img1;
 }
-/Multimedia/Foto1.jpg .textonosotros1 {
+.textonosotros1 {
   grid-area: text1;
 }
 .fotonosotros2 {
@@ -46,14 +45,16 @@
 /* Textos Nosotros */
 .textonosotros1 {
   font-family: "Playfair Display", serif;
-  display: flex;
-  flex-direction: column;
+  display: map-get($textnosotros, display);
+  flex-direction: map-get($textnosotros, direccion);
+  justify-content: map-get($textnosotros, centrado);
+  color: map-get($textnosotros, color);
+  background-color: map-get($textnosotros, fondo);
   padding: 0.5rem;
-  color: $primario;
-  background-color: $secundarioter;
 }
 .textonosotros1 h2 {
   color: $primario;
+  padding-bottom: 5rem;
   font-style: italic;
   animation-name: aparecertitulo;
   animation-duration: 2s;
@@ -77,11 +78,12 @@
   }
 }
 .textonosotros2 {
-  display: flex;
-  flex-direction: column;
+  display: map-get($textnosotros, display);
+  flex-direction: map-get($textnosotros, direccion);
+  justify-content: map-get($textnosotros, centrado);
+  color: map-get($textnosotros, color);
+  background-color: map-get($textnosotros, fondo);
   padding: 0.5rem;
-  color: $primario;
-  background-color: $secundarioter;
 }
 .textonosotros2 h2 {
   color: $primario;
@@ -91,10 +93,12 @@
   animation-timing-function: linear;
 }
 .textonosotros3 {
-  display: flex;
+  display: map-get($textnosotros, display);
+  flex-direction: map-get($textnosotros, direccion);
+  justify-content: map-get($textnosotros, centrado);
+  color: map-get($textnosotros, color);
+  background-color: map-get($textnosotros, fondo);
   padding: 0.5rem;
-  color: $primario;
-  background-color: $secundarioter;
 }
 .textonosotros3 a {
   padding: 0.5rem;
@@ -108,15 +112,17 @@
   color: $secundarioter;
 }
 .textonosotros4 {
-  display: flex;
+  @extend .textonosotros1;
+  /*   display: map-get($textnosotros, display);
+  flex-direction: map-get($textnosotros, direccion);
+  justify-content: map-get($textnosotros, centrado);
+  color: map-get($textnosotros, color);
+  background-color: map-get($textnosotros, fondo); */
   text-align: center;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 0.5rem;
-  color: $primario;
-  background-color: $secundarioter;
 }
+
 .botonCatalogoNos {
   text-decoration: none;
 }
@@ -124,7 +130,7 @@
   padding: 1.1rem;
   border-radius: 2rem;
   background-color: rgba(53, 88, 52, 0.721);
-  color: #14281dff;
+  color: $primario;
   font-size: large;
 }
 .botonCatalogoNos h2:hover {

@@ -1,0 +1,40 @@
+
+	-	Ya deje todo en SCSS
+	-	Inclui Metas distintos en todas las paginas 
+	-	Titile distintos en cada pagina
+	-	Puse titile en las fotos
+	-	Puse los alts
+	-	Fui ordenando los niveles de lectura
+	-	Agregue un mixin, un map y un extend, perdon se que fue poco pero la verdad no llegue a desarrollar mas para esta entrega pero desde ya que estoy haciendo todo lo posible para disponer mas tiempo pero justo me agarro un momento complicado para el proyecto final estará todo perfecto, llegare con lo justo para la ultima entrega tambien, perdón pero sucedieron cosas que no estaban previstas.
+
+
+Aqui desarrollare un breve contenido de la pagina y sus secciones
+
+Index:
+Presentación del sitio y sus paginas
+
+Inicia con un breve texto sobre la empresa acompañado de una imagen y un botón para acceder a la sección Nosotros.
+
+Continua mostrando las principales características de los productos, en este caso en forma horizontal en desktop
+
+Sección Catalogo con un carrusel y botón a catalogo
+
+Sección Faqs, contiene imágenes y breve texto acompañado de un botón a la sección Faqs
+
+
+Nosotros:
+
+Catalogo:
+
+Faqs:
+
+Contacto
+
+
+
+Animaciones con AOS
+
+Paleta de colores
+
+
+Redes siguen en toda la pagina

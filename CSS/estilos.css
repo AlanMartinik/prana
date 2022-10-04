@@ -134,6 +134,8 @@
 
 .gridNosotros {
   font-family: "Playfair Display", serif;
+  /*   display: grid;
+  grid-template-columns: 1fr 1fr; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "img1 text1" "text2 img2" "img3 text3" "text4 img4"; }
@@ -141,7 +143,7 @@
 .fotonosotros1 {
   grid-area: img1; }
 
-/Multimedia/Foto1.jpg .textonosotros1 {
+.textonosotros1, .textonosotros4 {
   grid-area: text1; }
 
 .fotonosotros2 {
@@ -173,16 +175,18 @@
   padding: 1rem; }
 
 /* Textos Nosotros */
-.textonosotros1 {
+.textonosotros1, .textonosotros4 {
   font-family: "Playfair Display", serif;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  justify-content: center;
   color: #14281dff;
-  background-color: #f1f5f2ff; }
+  background-color: #f1f5f2ff;
+  padding: 0.5rem; }
 
-.textonosotros1 h2 {
+.textonosotros1 h2, .textonosotros4 h2 {
   color: #14281dff;
+  padding-bottom: 5rem;
   font-style: italic;
   animation-name: aparecertitulo;
   animation-duration: 2s;
@@ -203,9 +207,10 @@
 .textonosotros2 {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  justify-content: center;
   color: #14281dff;
-  background-color: #f1f5f2ff; }
+  background-color: #f1f5f2ff;
+  padding: 0.5rem; }
 
 .textonosotros2 h2 {
   color: #14281dff;
@@ -216,9 +221,11 @@
 
 .textonosotros3 {
   display: flex;
-  padding: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
   color: #14281dff;
-  background-color: #f1f5f2ff; }
+  background-color: #f1f5f2ff;
+  padding: 0.5rem; }
 
 .textonosotros3 a {
   padding: 0.5rem;
@@ -232,14 +239,14 @@
   color: #f1f5f2ff; }
 
 .textonosotros4 {
-  display: flex;
+  /*   display: map-get($textnosotros, display);
+  flex-direction: map-get($textnosotros, direccion);
+  justify-content: map-get($textnosotros, centrado);
+  color: map-get($textnosotros, color);
+  background-color: map-get($textnosotros, fondo); */
   text-align: center;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  color: #14281dff;
-  background-color: #f1f5f2ff; }
+  padding: 0.5rem; }
 
 .botonCatalogoNos {
   text-decoration: none; }

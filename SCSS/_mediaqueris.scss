@@ -24,8 +24,8 @@
 /* !Tablet NOSOTROS */
 @media (max-width: 768px) {
   .gridNosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include grid(grid, 1fr 1fr 1fr 1fr);
+
     grid-template-areas:
       "img1 text1 img2 text4"
       "text2 img3 text3 img4";
@@ -34,15 +34,15 @@
   .footer {
     flex-direction: column;
     display: flex;
-    background-color: #f1f5f2ff;
+    background-color: $secundarioter;
     text-align: center;
   }
 }
 /* !MOBILE NOSOTROS */
 @media (max-width: 576px) {
   .gridNosotros {
-    display: grid;
-    grid-template-columns: 1fr;
+    @include grid(grid, 1fr);
+
     grid-template-areas:
       "img1"
       "text1"
@@ -57,7 +57,7 @@
   .footer {
     display: flex;
     flex-direction: column;
-    background-color: #f1f5f2ff;
+    background-color: $secundarioter;
     text-align: center;
   }
   .textonosotros3 a {
