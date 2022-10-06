@@ -6,7 +6,7 @@
   background-color: #f1f5f2ff; }
   .navbar .navbar-brand img {
     margin-left: 1rem;
-    width: 40%; }
+    width: 60%; }
 
 .nav-link {
   color: #c2a878;
@@ -68,11 +68,9 @@
 
 .titulobeneficios {
   text-align: center;
-  background-color: rgba(20, 40, 29, 0.48);
+  background-color: rgba(20, 40, 29, 0.52);
   color: #f1f5f2ff;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 2.5rem; }
 
 .beneficios {
@@ -91,26 +89,12 @@
   padding-bottom: 3rem;
   padding-top: 8rem; }
 
-@keyframes beneanim {
-  0% {
-    filter: grayscale(100%); }
-  25% {
-    filter: grayscale(75%); }
-  50% {
-    filter: grayscale(50%); }
-  75% {
-    filter: grayscale(25%); }
-  100% {
-    filter: grayscale(0%); } }
-
 .cat {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 2rem;
-  background-image: url(../Multimedia/fondocat2.jpeg);
+  padding: 2rem;
+  /*   background-image: url(../Multimedia/fondocat2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover; */ }
 
 .carousel {
   width: 30%; }
@@ -155,9 +139,9 @@
       font-size: 1.8rem; }
 
 .dudas {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #c2a878;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f1f5f2ff;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -170,10 +154,10 @@
     padding: 8px;
     font-weight: 600;
     background-color: #f1f5f2ff;
-    transition: all 1s; }
+    transition: all 0.5s; }
     .dudas h3:hover {
       color: #c2a878;
-      background-color: #14281dff; }
+      /* background-color: $primario; */ }
   .dudas a {
     text-decoration: none; }
   .dudas i {
@@ -185,7 +169,7 @@
     border-right: solid 3px #14281dff; */
     transition: all 1s; }
     .dudas i:hover {
-      color: #f1f5f2ff;
+      color: #c2a878;
       font-size: 2.5rem;
       /*       background-color: #f1f5f2ff;
  */ }
@@ -239,7 +223,7 @@
   justify-content: center;
   color: #14281dff;
   background-color: #f1f5f2ff;
-  padding: 0.5rem; }
+  padding: 3rem; }
   .textonosotros1 h2, .textonosotros4 h2 {
     font-family: "Playfair Display", serif;
     color: #14281dff;
@@ -269,7 +253,7 @@
   justify-content: center;
   color: #14281dff;
   background-color: #f1f5f2ff;
-  padding: 0.5rem; }
+  padding: 3rem; }
   .textonosotros2 h2 {
     color: #14281dff;
     padding-bottom: 3rem;
@@ -286,7 +270,7 @@
   justify-content: center;
   color: #14281dff;
   background-color: #f1f5f2ff;
-  padding: 0.5rem; }
+  padding: 3rem; }
   .textonosotros3 p {
     font-family: "open sans"; }
   .textonosotros3 a {
@@ -308,7 +292,7 @@
   background-color: map-get($textnosotros, fondo); */
   text-align: center;
   align-items: center;
-  padding: 0.5rem; }
+  padding: 3rem; }
   .textonosotros4 p {
     font-family: "open sans"; }
 
@@ -476,23 +460,28 @@ body {
   --bs-btn-active-border-color: #14281dff;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
+.footercon {
+  background-color: #f1f5f2ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footercon img {
+    padding: 1rem;
+    width: 60%; }
+
 .footer {
   background-color: #f1f5f2ff;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .footer img {
-    width: 3rem;
-    width: 5rem;
-    height: auto;
-    padding: 10px; }
+    padding: 1rem;
+    width: 60%; }
 
 .menuFooter ul {
-  text-align: center;
-  display: flex;
-  margin: 1rem; }
+  margin: 1rem;
+  padding-right: 9rem; }
   .menuFooter ul li {
-    display: flex;
     margin: 0.1rem;
     font-style: italic;
     font-weight: 500;
@@ -512,22 +501,21 @@ body {
   right: 0.2rem;
   bottom: 50%; }
   .redesFlotantes img {
-    width: 2rem;
+    width: 4rem;
     padding: 3px;
     display: block; }
 
 .whatsapp img {
-  width: 3rem;
-  width: 5rem;
-  height: auto;
-  padding: 10px; }
+  width: 7rem;
+  height: auto; }
 
 .derechos {
+  padding: 1rem;
   color: #14281dff;
   text-align: center;
   font-style: italic;
-  font-size: small;
-  font-weight: 400;
+  font-size: large;
+  font-weight: 600;
   background-color: #c2a878; }
 
 /* Index */

@@ -46,11 +46,9 @@
 }
 .titulobeneficios {
   text-align: center;
-  background-color: rgba(20, 40, 29, 0.48);
+  background-color: rgba(20, 40, 29, 0.52);
   color: $secundarioter;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 2.5rem;
 }
 .beneficios {
@@ -70,31 +68,12 @@
   padding-top: 8rem;
 }
 
-@keyframes beneanim {
-  0% {
-    filter: grayscale(100%);
-  }
-  25% {
-    filter: grayscale(75%);
-  }
-  50% {
-    filter: grayscale(50%);
-  }
-  75% {
-    filter: grayscale(25%);
-  }
-  100% {
-    filter: grayscale(0%);
-  }
-}
 .cat {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 2rem;
-  background-image: url(../Multimedia/fondocat2.jpeg);
+  padding: 2rem;
+  /*   background-image: url(../Multimedia/fondocat2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 .carousel {
   width: 30%;
@@ -149,9 +128,9 @@
 }
 
 .dudas {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: $secundario;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $secundarioter;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,10 +144,10 @@
     padding: 8px;
     font-weight: 600;
     background-color: $secundarioter;
-    transition: all 1s;
+    transition: all 0.5s;
     &:hover {
       color: $secundario;
-      background-color: $primario;
+      /* background-color: $primario; */
     }
   }
   a {
@@ -183,7 +162,7 @@
     border-right: solid 3px #14281dff; */
     transition: all 1s;
     &:hover {
-      color: $secundarioter;
+      color: $secundario;
       font-size: 2.5rem;
       /*       background-color: #f1f5f2ff;
  */
