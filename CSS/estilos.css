@@ -26,13 +26,13 @@
   color: #f1f5f2ff; }
 
 .headindex h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   color: #c2a878; }
 
 .headindex .prana {
   font-style: italic;
-  font-size: 4rem; }
+  font-size: 5rem; }
 
 .imgnos {
   padding: 0; }
@@ -45,16 +45,16 @@
     font-family: "Playfair Display", serif;
     font-style: italic;
     color: #14281dff;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    font-size: 3rem; }
   .nosotros h6 {
     font-family: "open sans";
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
     color: #c2a878; }
   .nosotros p {
     font-family: "open sans";
-    padding-bottom: 2rem;
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .nosotros a {
     font-size: 1.5rem;
     font-style: italic; }
@@ -68,7 +68,7 @@
 
 .titulobeneficios {
   text-align: center;
-  background-color: #14281dff;
+  background-color: rgba(20, 40, 29, 0.48);
   color: #f1f5f2ff;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -105,11 +105,15 @@
 
 .cat {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   padding-top: 2rem;
   background-image: url(../Multimedia/fondocat2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.carousel {
+  width: 30%; }
 
 .btncatalogo {
   display: flex;
@@ -123,22 +127,33 @@
   font-style: normal; }
 
 .textfaqs {
-  background-image: url(../Multimedia/fondoplanta.jpeg); }
+  background-image: url(../Multimedia/Fondotabla.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .textfaqs h2 {
     font-style: italic;
-    padding-bottom: 2rem;
+    padding-bottom: 16rem;
+    padding-top: 1rem;
     font-size: 3rem;
-    color: #f1f5f2ff; }
+    color: #14281dff; }
   .textfaqs p {
-    padding-top: 2rem;
+    background-color: rgba(20, 40, 29, 0.434);
+    border-radius: 1rem;
+    padding: 1rem;
+    align-self: center;
     font-size: 1.5rem;
     font-family: "open sans";
     color: #f1f5f2ff; }
 
-.verfaqs a {
-  font-size: 2rem; }
+.verfaqs {
+  padding-top: 4rem; }
+  .verfaqs a {
+    font-size: 2rem; }
 
 .dudas {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: #c2a878;
   display: flex;
   flex-direction: column;
@@ -509,15 +524,10 @@ body {
 
 /* Index */
 @media (max-width: 576px) {
-  .img-thumbnail {
-    background-color: #f1f5f2ff;
-    width: 50%;
-    margin: 0.5rem; }
+  .moneda {
+    width: 40%; }
   .carousel {
     width: 50%; } }
-
-.textfaqs {
-  margin-top: 5rem; }
 
 .verfaqs {
   margin-top: 5rem; }

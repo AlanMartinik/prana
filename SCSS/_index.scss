@@ -1,12 +1,12 @@
 .headindex {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     color: $secundario;
   }
   .prana {
     font-style: italic;
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 .imgnos {
@@ -22,18 +22,17 @@
     font-style: italic;
     color: map-get($textos, color);
     padding-bottom: 2rem;
+    font-size: 3rem;
   }
   h6 {
     font-family: "open sans";
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-
+    font-size: 2rem;
+    padding-bottom: 1rem;
     color: $secundario;
   }
   p {
     font-family: "open sans";
-    padding-bottom: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   a {
     font-size: 1.5rem;
@@ -49,7 +48,7 @@
 }
 .titulobeneficios {
   text-align: center;
-  background-color: $primario;
+  background-color: rgba(20, 40, 29, 0.48);
   color: $secundarioter;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -92,11 +91,15 @@
 }
 .cat {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   padding-top: 2rem;
   background-image: url(../Multimedia/fondocat2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.carousel {
+  width: 30%;
 }
 
 .btncatalogo {
@@ -114,27 +117,37 @@
   }
 }
 .textfaqs {
-  background-image: url(../Multimedia/fondoplanta.jpeg);
+  background-image: url(../Multimedia/Fondotabla.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   h2 {
     font-style: italic;
-    padding-bottom: 2rem;
+    padding-bottom: 16rem;
+    padding-top: 1rem;
     font-size: 3rem;
-    color: $secundarioter;
+    color: $primario;
   }
   p {
-    padding-top: 2rem;
+    background-color: rgba(20, 40, 29, 0.434);
+    border-radius: 1rem;
+    padding: 1rem;
+    align-self: center;
     font-size: 1.5rem;
     font-family: "open sans";
     color: $secundarioter;
   }
 }
 .verfaqs {
+  padding-top: 4rem;
   a {
     font-size: 2rem;
   }
 }
 
 .dudas {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: $secundario;
   display: flex;
   flex-direction: column;
