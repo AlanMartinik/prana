@@ -34,31 +34,36 @@
 }
 .tituloNosotros {
   background-color: $primario;
-  color: $secundarioter;
+  color: $secundario;
   text-align: center;
-  font-weight: 600;
   font-style: italic;
-  font-family: cursive;
-  font-size: 6rem;
+  font-family: "Playfair Display", serif;
   padding: 1rem;
+  h1 {
+    font-size: 5rem;
+  }
 }
+
 /* Textos Nosotros */
 .textonosotros1 {
-  font-family: "Playfair Display", serif;
   display: map-get($textos, display);
   flex-direction: map-get($textos, direccion);
   justify-content: map-get($textos, centrado);
   color: map-get($textos, color);
   background-color: map-get($textos, fondo);
   padding: 0.5rem;
-}
-.textonosotros1 h2 {
-  color: $primario;
-  padding-bottom: 5rem;
-  font-style: italic;
-  animation-name: aparecertitulo;
-  animation-duration: 2s;
-  animation-timing-function: linear;
+  h2 {
+    font-family: "Playfair Display", serif;
+    color: $primario;
+    padding-bottom: 3rem;
+    font-style: italic;
+    animation-name: aparecertitulo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+  p {
+    font-family: "open sans";
+  }
 }
 @keyframes aparecertitulo {
   0% {
@@ -84,13 +89,17 @@
   color: map-get($textos, color);
   background-color: map-get($textos, fondo);
   padding: 0.5rem;
-}
-.textonosotros2 h2 {
-  color: $primario;
-  font-style: italic;
-  animation-name: aparecertitulo;
-  animation-duration: 2s;
-  animation-timing-function: linear;
+  h2 {
+    color: $primario;
+    padding-bottom: 3rem;
+    font-style: italic;
+    animation-name: aparecertitulo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+  p {
+    font-family: "open sans";
+  }
 }
 .textonosotros3 {
   display: map-get($textos, display);
@@ -99,17 +108,22 @@
   color: map-get($textos, color);
   background-color: map-get($textos, fondo);
   padding: 0.5rem;
-}
-.textonosotros3 a {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: rgba(53, 88, 52, 0.721);
-  color: $primario;
-  font-size: large;
-  text-decoration: none;
-}
-.textonosotros3 a:hover {
-  color: $secundarioter;
+  p {
+    font-family: "open sans";
+  }
+  a {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(53, 88, 52, 0.721);
+    color: $primario;
+    font-size: large;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+
+    &:hover {
+      color: $secundarioter;
+    }
+  }
 }
 .textonosotros4 {
   @extend .textonosotros1;
@@ -121,20 +135,23 @@
   text-align: center;
   align-items: center;
   padding: 0.5rem;
+  p {
+    font-family: "open sans";
+  }
 }
 
 .botonCatalogoNos {
   text-decoration: none;
-}
-.botonCatalogoNos h2 {
-  padding: 1.1rem;
-  border-radius: 2rem;
-  background-color: rgba(53, 88, 52, 0.721);
-  color: $primario;
-  font-size: large;
-}
-.botonCatalogoNos h2:hover {
-  color: $secundarioter;
+  h2 {
+    padding: 1.1rem;
+    border-radius: 2rem;
+    background-color: rgba(53, 88, 52, 0.721);
+    color: $primario;
+    font-size: large;
+    &:hover {
+      color: $secundarioter;
+    }
+  }
 }
 /* IMAGENES */
 .fotonosotros1 {
