@@ -34,38 +34,62 @@
   font-style: italic;
   font-size: 4rem; }
 
-.nosotros h5 {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 2rem;
-  color: #14281dff; }
+.imgnos {
+  padding: 0; }
 
-.nosotros h6 {
-  font-family: "open sans";
-  font-size: 1.5rem;
-  color: #c2a878; }
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .nosotros h2 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: #14281dff;
+    padding-bottom: 2rem; }
+  .nosotros h6 {
+    font-family: "open sans";
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color: #c2a878; }
+  .nosotros p {
+    font-family: "open sans";
+    padding-bottom: 2rem;
+    font-size: 1rem; }
+  .nosotros a {
+    font-size: 1.5rem;
+    font-style: italic; }
 
-.nosotros p {
-  font-family: "open sans"; }
+.btn {
+  align-self: center;
+  transition: all 1s; }
 
-.nosotros a {
-  font-size: 1.5rem;
-  font-style: italic; }
+.btn:hover {
+  font-size: 2rem; }
 
 .titulobeneficios {
   text-align: center;
-  background-color: #f1f5f2ff;
-  color: #c2a878;
+  background-color: #14281dff;
+  color: #f1f5f2ff;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  font-size: 2.5rem; }
 
-.img-thumbnail {
-  background-color: #f1f5f2ff;
+.beneficios {
+  background-image: url(../Multimedia/Fondosol.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*   background-color: $secundarioter;
+ */ }
+
+.moneda {
   animation-name: beneanim;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  padding-bottom: 3rem;
+  padding-top: 8rem; }
 
 @keyframes beneanim {
   0% {
@@ -79,25 +103,40 @@
   100% {
     filter: grayscale(0%); } }
 
+.cat {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  background-image: url(../Multimedia/fondocat2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .btncatalogo {
   display: flex;
   justify-content: center;
   padding: 1rem; }
   .btncatalogo a {
-    font-style: normal; }
+    font-style: normal;
+    font-size: 3rem; }
 
 .botonescribi a {
   font-style: normal; }
 
-.textfaqs h5 {
-  font-style: italic; }
+.textfaqs {
+  background-image: url(../Multimedia/fondoplanta.jpeg); }
+  .textfaqs h2 {
+    font-style: italic;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: #f1f5f2ff; }
+  .textfaqs p {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: "open sans";
+    color: #f1f5f2ff; }
 
-.textfaqs p {
-  padding-top: 2rem;
-  font-family: "open sans"; }
-
-.verfaqs {
-  padding-top: 2rem; }
+.verfaqs a {
+  font-size: 2rem; }
 
 .dudas {
   background-color: #c2a878;

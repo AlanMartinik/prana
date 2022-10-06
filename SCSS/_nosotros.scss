@@ -45,11 +45,11 @@
 /* Textos Nosotros */
 .textonosotros1 {
   font-family: "Playfair Display", serif;
-  display: map-get($textnosotros, display);
-  flex-direction: map-get($textnosotros, direccion);
-  justify-content: map-get($textnosotros, centrado);
-  color: map-get($textnosotros, color);
-  background-color: map-get($textnosotros, fondo);
+  display: map-get($textos, display);
+  flex-direction: map-get($textos, direccion);
+  justify-content: map-get($textos, centrado);
+  color: map-get($textos, color);
+  background-color: map-get($textos, fondo);
   padding: 0.5rem;
 }
 .textonosotros1 h2 {
@@ -78,11 +78,11 @@
   }
 }
 .textonosotros2 {
-  display: map-get($textnosotros, display);
-  flex-direction: map-get($textnosotros, direccion);
-  justify-content: map-get($textnosotros, centrado);
-  color: map-get($textnosotros, color);
-  background-color: map-get($textnosotros, fondo);
+  display: map-get($textos, display);
+  flex-direction: map-get($textos, direccion);
+  justify-content: map-get($textos, centrado);
+  color: map-get($textos, color);
+  background-color: map-get($textos, fondo);
   padding: 0.5rem;
 }
 .textonosotros2 h2 {
@@ -93,11 +93,11 @@
   animation-timing-function: linear;
 }
 .textonosotros3 {
-  display: map-get($textnosotros, display);
-  flex-direction: map-get($textnosotros, direccion);
-  justify-content: map-get($textnosotros, centrado);
-  color: map-get($textnosotros, color);
-  background-color: map-get($textnosotros, fondo);
+  display: map-get($textos, display);
+  flex-direction: map-get($textos, direccion);
+  justify-content: map-get($textos, centrado);
+  color: map-get($textos, color);
+  background-color: map-get($textos, fondo);
   padding: 0.5rem;
 }
 .textonosotros3 a {

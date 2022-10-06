@@ -9,41 +9,68 @@
     font-size: 4rem;
   }
 }
+.imgnos {
+  padding: 0;
+}
+
 .nosotros {
-  h5 {
+  display: map-get($textos, display);
+  flex-direction: map-get($textos, direccion);
+  justify-content: map-get($textos, centrado);
+  h2 {
     font-family: "Playfair Display", serif;
     font-style: italic;
-    font-size: 2rem;
-    color: $primario;
+    color: map-get($textos, color);
+    padding-bottom: 2rem;
   }
   h6 {
     font-family: "open sans";
     font-size: 1.5rem;
+    padding-bottom: 2rem;
+
     color: $secundario;
   }
   p {
     font-family: "open sans";
+    padding-bottom: 2rem;
+    font-size: 1rem;
   }
   a {
     font-size: 1.5rem;
     font-style: italic;
   }
 }
-
+.btn {
+  align-self: center;
+  transition: all 1s;
+}
+.btn:hover {
+  font-size: 2rem;
+}
 .titulobeneficios {
   text-align: center;
-  background-color: $secundarioter;
-  color: $secundario;
+  background-color: $primario;
+  color: $secundarioter;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
+  font-size: 2.5rem;
 }
-.img-thumbnail {
-  background-color: $secundarioter;
+.beneficios {
+  background-image: url(../Multimedia/Fondosol.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*   background-color: $secundarioter;
+ */
+}
+.moneda {
   animation-name: beneanim;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  padding-bottom: 3rem;
+  padding-top: 8rem;
 }
 
 @keyframes beneanim {
@@ -63,6 +90,14 @@
     filter: grayscale(0%);
   }
 }
+.cat {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  background-image: url(../Multimedia/fondocat2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .btncatalogo {
   display: flex;
@@ -70,6 +105,7 @@
   padding: 1rem;
   a {
     font-style: normal;
+    font-size: 3rem;
   }
 }
 .botonescribi {
@@ -78,16 +114,24 @@
   }
 }
 .textfaqs {
-  h5 {
+  background-image: url(../Multimedia/fondoplanta.jpeg);
+  h2 {
     font-style: italic;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: $secundarioter;
   }
   p {
     padding-top: 2rem;
+    font-size: 1.5rem;
     font-family: "open sans";
+    color: $secundarioter;
   }
 }
 .verfaqs {
-  padding-top: 2rem;
+  a {
+    font-size: 2rem;
+  }
 }
 
 .dudas {
