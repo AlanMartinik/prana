@@ -5,11 +5,12 @@ _* {
 
 body {
   background: linear-gradient(
-    180deg,
+    0deg,
+    rgba(241, 245, 242, 1) 0%,
     rgba(53, 88, 52, 1) 0%,
-    rgba(20, 40, 29, 1) 39%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(20, 40, 29, 1) 70%
   );
+
   font-family: "Playfair Display", serif;
 }
 
