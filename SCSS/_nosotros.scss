@@ -156,6 +156,7 @@
 /* IMAGENES */
 .fotonosotros1 {
   display: flex;
+  object-fit: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
@@ -180,6 +181,7 @@
 }
 .fotonosotros2 {
   display: flex;
+  object-fit: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
@@ -187,12 +189,14 @@
 }
 .fotonosotros3 {
   display: flex;
+  object-fit: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
 }
 .fotonosotros4 {
   display: flex;
+  object-fit: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
