@@ -52,23 +52,27 @@
     color: #14281dff; }
   .nosotros h6 {
     font-family: "open sans";
-    color: #c2a878; }
+    color: #c2a878;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
   .nosotros p {
     font-family: "open sans"; }
   .nosotros a {
     font-style: italic;
     font-size: 1rem; }
 
-.btn {
-  align-self: center;
-  transition: all 1s; }
-
-.btn:hover {
-  font-size: 1.5rem; }
+.btnnos {
+  display: flex;
+  justify-content: center; }
+  .btnnos a {
+    font-style: normal;
+    font-size: 1.5rem; }
+    .btnnos a:hover {
+      font-size: 2rem; }
 
 .titulobeneficios {
   text-align: center;
-  background-color: rgba(20, 40, 29, 0.52);
+  background-color: rgba(20, 40, 29, 0.745);
   color: #f1f5f2ff;
   padding: 2rem;
   font-size: 2.5rem; }
@@ -119,7 +123,7 @@
   background-size: cover; }
   .textfaqs h2 {
     font-style: italic;
-    padding-bottom: 7rem;
+    padding-bottom: 30%;
     font-size: 3rem;
     color: #14281dff; }
   .textfaqs p {
@@ -132,11 +136,11 @@
     color: #f1f5f2ff; }
 
 .verfaqs {
-  padding-top: 5rem; }
+  padding-top: 10rem; }
   .verfaqs a {
-    font-size: 1.5rem; }
+    font-size: 2.5rem; }
     .verfaqs a:hover {
-      font-size: 1.8rem; }
+      font-size: 3rem; }
 
 .dudas {
   padding-top: 3rem;
@@ -359,14 +363,19 @@
   width: 100%; }
 
 .headcatalogo h1 {
+  font-size: 5rem;
+  padding: 1rem;
+  font-family: "Playfair Display", serif;
   font-style: italic;
   text-align: center;
   color: #c2a878; }
 
 .headcatalogo p {
+  font-size: 1.5rem;
   color: #f1f5f2ff;
   opacity: 75%;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  padding: 1rem; }
 
 .cardfaqs {
   background-color: #c2a878; }
@@ -460,6 +469,13 @@ body {
   --bs-btn-active-border-color: #14281dff;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
+.btn {
+  align-self: center;
+  transition: all 1s; }
+
+.btn:hover {
+  font-size: 1.5rem; }
+
 .footercon {
   background-color: #f1f5f2ff;
   display: flex;
@@ -467,7 +483,7 @@ body {
   align-items: center; }
   .footercon img {
     padding: 1rem;
-    width: 60%; }
+    width: 9%; }
 
 .footer {
   background-color: #f1f5f2ff;

@@ -27,6 +27,13 @@ body {
   --bs-btn-active-border-color: #14281dff;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
+.btn {
+  align-self: center;
+  transition: all 1s;
+}
+.btn:hover {
+  font-size: 1.5rem;
+}
 .footercon {
   background-color: $secundarioter;
   display: flex;
@@ -34,7 +41,7 @@ body {
   align-items: center;
   img {
     padding: 1rem;
-    width: 60%;
+    width: 9%;
   }
 }
 .footer {

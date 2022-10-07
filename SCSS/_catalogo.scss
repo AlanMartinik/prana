@@ -1,13 +1,18 @@
 .headcatalogo {
   h1 {
+    font-size: 5rem;
+    padding: 1rem;
+    font-family: "Playfair Display", serif;
     font-style: italic;
     text-align: center;
     color: $secundario;
   }
   p {
+    font-size: 1.5rem;
     color: $secundarioter;
     opacity: 75%;
     font-family: "Open Sans";
+    padding: 1rem;
   }
 }
 
