@@ -4,12 +4,7 @@ _* {
 }
 
 body {
-  background: linear-gradient(
-    0deg,
-    rgba(241, 245, 242, 1) 0%,
-    rgba(53, 88, 52, 1) 0%,
-    rgba(20, 40, 29, 1) 70%
-  );
+  background-color: $primario;
 
   font-family: "Playfair Display", serif;
 }
@@ -40,10 +35,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  img {
-    padding: 1rem;
-    width: 9%;
-  }
 }
 .footer {
   background-color: $secundarioter;
@@ -55,7 +46,9 @@ body {
     width: 60%;
   }
 }
-
+.menuFooter {
+  padding-left: 5rem;
+}
 .menuFooter ul {
   margin: 1rem;
   padding-right: 9rem;
@@ -79,17 +72,13 @@ body {
 }
 
 .redesFlotantes {
-  position: fixed;
-  right: 0.2rem;
-  bottom: 50%;
   img {
-    width: 4rem;
+    width: 3rem;
     padding: 3px;
-    display: block;
   }
 }
 .whatsapp img {
-  width: 7rem;
+  width: 4rem;
   height: auto;
 }
 .derechos {

@@ -31,7 +31,15 @@
   text-align: center;
   color: #c2a878; }
 
-.headindex .prana {
+.headindex p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f1f5f2ff;
+  opacity: 50%;
+  font-family: "Open Sans";
+  padding: 1rem; }
+
+.prana {
   font-style: italic;
   font-size: 5rem; }
 
@@ -51,12 +59,16 @@
   .nosotros h2 {
     font-family: "Playfair Display", serif;
     font-style: italic;
-    color: #14281dff; }
+    color: #14281dff;
+    font-size: 2rem; }
   .nosotros h6 {
     font-family: "open sans";
+    justify-self: center;
     color: #c2a878;
     padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.5rem; }
   .nosotros p {
     font-family: "open sans"; }
   .nosotros a {
@@ -74,26 +86,32 @@
 
 .titulobeneficios {
   text-align: center;
-  background-color: rgba(20, 40, 29, 0.745);
   color: #f1f5f2ff;
-  padding: 2rem;
-  font-size: 2.5rem; }
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  opacity: 70%;
+  font-family: "open sans"; }
 
 .beneficios {
-  background-image: url(../Multimedia/Fondosol.jpeg);
+  font-family: "open sans";
+  /*   background-image: url(../Multimedia/Fondosol.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /*   background-color: $secundarioter;
+ */
+  background-image: url(/Multimedia/Fondosol.jpeg);
+  height: 100%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*   background-color: $secundarioter;
- */ }
-
-.franja {
-  animation-name: beneanim;
-  animation-duration: 1.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  padding-bottom: 3rem;
-  padding-top: 8rem; }
+  padding-top: 30rem; }
+  .beneficios img {
+    width: 10rem; }
+  .beneficios .benef {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.427); }
 
 .cat {
   padding: 2rem;
@@ -103,7 +121,7 @@
   background-size: cover; */ }
 
 .carousel {
-  width: 30%; }
+  width: 40%; }
 
 .btncatalogo {
   display: flex;
@@ -115,21 +133,24 @@
     .btncatalogo a:hover {
       font-size: 1.8rem; }
 
-.botonescribi a {
-  font-style: normal; }
-
 .textfaqs {
-  background-image: url(../Multimedia/Fondotabla.jpeg);
+  display: block;
+  object-fit: cover;
+  background-image: url(../Multimedia/fondofaqs.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-family: "Playfair Display", serif; }
   .textfaqs h2 {
     font-style: italic;
-    padding-bottom: 30%;
     font-size: 3rem;
-    color: #14281dff; }
+    padding: 1rem;
+    border-radius: 2rem;
+    color: #c2a878;
+    background-color: #f1f5f2ff;
+    margin-bottom: 10rem; }
   .textfaqs p {
-    background-color: rgba(20, 40, 29, 0.434);
+    background-color: rgba(20, 40, 29, 0.318);
     border-radius: 1rem;
     padding: 1rem;
     align-self: center;
@@ -137,16 +158,34 @@
     font-family: "open sans";
     color: #f1f5f2ff; }
 
-.verfaqs {
-  padding-top: 10rem; }
-  .verfaqs a {
-    font-size: 2.5rem; }
-    .verfaqs a:hover {
-      font-size: 3rem; }
+.verfaqs a {
+  font-size: 1.5rem; }
+  .verfaqs a:hover {
+    font-size: 2rem; }
+
+.dud {
+  background-color: #f1f5f2ff; }
+
+.imagendudas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem; }
+  .imagendudas img {
+    width: 10rem; }
+
+.cientif {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem; }
+  .cientif img {
+    width: 20rem; }
 
 .dudas {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   background-color: #f1f5f2ff;
   display: flex;
   flex-direction: column;
@@ -155,9 +194,9 @@
     color: #14281dff;
     padding-bottom: 1rem; }
   .dudas h3 {
+    font-family: "open sans";
     color: #355834ff;
-    border-radius: 1rem;
-    padding: 8px;
+    padding-bottom: 2rem;
     font-weight: 600;
     background-color: #f1f5f2ff;
     transition: all 0.5s; }
@@ -167,7 +206,7 @@
   .dudas a {
     text-decoration: none; }
   .dudas i {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #14281dff;
     /*     border-top: Solid 3px #14281dff;
     border-bottom: Solid 3px #14281dff;
@@ -176,7 +215,7 @@
     transition: all 1s; }
     .dudas i:hover {
       color: #c2a878;
-      font-size: 2.5rem;
+      font-size: 3.3rem;
       /*       background-color: #f1f5f2ff;
  */ }
 
@@ -458,7 +497,7 @@ _* {
   padding: 0%; }
 
 body {
-  background: linear-gradient(0deg, #f1f5f2 0%, #355834 0%, #14281d 70%);
+  background-color: #14281dff;
   font-family: "Playfair Display", serif; }
 
 .btn-primary {
@@ -487,9 +526,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .footercon img {
-    padding: 1rem;
-    width: 9%; }
 
 .footer {
   background-color: #f1f5f2ff;
@@ -499,6 +535,9 @@ body {
   .footer img {
     padding: 1rem;
     width: 60%; }
+
+.menuFooter {
+  padding-left: 5rem; }
 
 .menuFooter ul {
   margin: 1rem;
@@ -518,17 +557,12 @@ body {
     .menuFooter ul a:hover {
       color: #f1f5f2ff; }
 
-.redesFlotantes {
-  position: fixed;
-  right: 0.2rem;
-  bottom: 50%; }
-  .redesFlotantes img {
-    width: 4rem;
-    padding: 3px;
-    display: block; }
+.redesFlotantes img {
+  width: 3rem;
+  padding: 3px; }
 
 .whatsapp img {
-  width: 7rem;
+  width: 4rem;
   height: auto; }
 
 .derechos {

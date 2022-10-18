@@ -36,8 +36,8 @@
 <body>
   <!-- menu -->
     <nav class="navbar navbar-expand-lg bg-faq" >
-        <div class="container-fluid">
-        <a class="navbar-brand" href=""><img src="./Multimedia/Logo_head.png" alt="logoprana" title="logoprana"></a>
+        <div class="container-fluid ">
+        <a class="navbar-brand " href=""><img src="./Multimedia/Logo_head.png" alt="logoprana" title="logoprana"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,6 +64,7 @@
     <!-- Titulo Index -->
 <header class="headindex m-4">
     <h1>Conoce <strong class="prana">PRANA </strong></h1>
+    <p>Productos derivados de cannabis para uso medicinal</p>
 </header>
 <!-- Nosotros Index -->
 <section id="arriba" class="nos container-fluid">
@@ -71,30 +72,29 @@
             <img src="./Multimedia/mision-prana.jpg" class="imgnos img-fluid col-md-6" alt="FotoNosotros" title="ConcePrana">
         <div class="card col-md-6">
             <div class="card-body nosotros">
-            <h2 class="card-title text-center">Nuestra Misíon</h2>
-            <h6 class="card-subtitle text-center
-            ">Mejorar vidas.</h6>
-            <p class="card-text text-center">Sabemos por experiencia personal que el CBD de alta calidad puede cambiar vidas. Nuestra misión es hacer que esos beneficios estén disponibles para todos aquellos que buscan un remedio natural para los problemas que enfrentamos a diario.</p>
-            <p class="text-center">Aceite PRANA brinda diversos beneficios que contribuyen a mejorar nuestro bienestar. Entre ellos: acelera la recuperación, reduce dolores y afecciones crónicas, lucha contra la fatiga, ansiedad y estrés, reduce la inflamación, mejora el flujo sanguíneo, ayuda a conciliar el sueño, insomnio, ansiedad, bruxismo etc...</p>
-            <h6 class="text-center">PASATE A LO NATURAL</h6><div class="btnnos">
+            <h2 data-aos="fade-down" data-aos-delay="50" data-aos-easing="ease-in-sine"class="card-title">Nuestra Misíon</h2>
+            <h6 class="card-subtitle text-end
+            " data-aos="fade-right" data-aos-delay="800" data-aos-easing="ease-in-sine">Mejorar vidas.</h6>
+            <p data-aos="zoom-in" data-aos-delay="1200" data-aos-easing="ease-in-out" class="card-text">Sabemos por experiencia personal que el CBD de alta calidad puede cambiar vidas. Nuestra misión es hacer que esos beneficios estén disponibles para todos aquellos que buscan un remedio natural para los problemas que enfrentamos a diario.</p>
+            <p data-aos="zoom-in" data-aos-delay="1200" data-aos-easing="ease-in-out">Aceite PRANA brinda diversos beneficios que contribuyen a mejorar nuestro bienestar. Entre ellos: acelera la recuperación, reduce dolores y afecciones crónicas, lucha contra la fatiga, ansiedad y estrés, reduce la inflamación, mejora el flujo sanguíneo, ayuda a conciliar el sueño, insomnio, ansiedad, bruxismo etc...</p>
+            <h6 data-aos="fade-up" data-aos-delay="2000" data-aos-easing="ease-in-sine" class="text-center">PASATE A LO NATURAL</h6><div class="btnnos">
             <a href="./Paginas/Nosotros.html" class="btn btn-primary d-flex justify-content-center mt-4">Conocenos</a></div>
             </div>
     </div>
 </section>
 <!-- Beneficios Principales -->
 <section class="container-fluid">
-    <div  class="beneficios row d-flex justify-content-center">
-        <h2 class="titulobeneficios">Principales Caracteristicas</h2>
+    <div  class="beneficios">
+      <div class="benef row d-flex justify-content-between">
         <img src="" class="col-md-1" alt="">
+        <img data-aos="flip-left" src="./Multimedia/testeado.png" class=" col-md-2" alt="Sustentable" title="sustentable">
+        <img data-aos="flip-left" src="./Multimedia/ecofrendly.png" class=" col-md-2" alt="ecofrendly" title="ecofrendly">
+        <img data-aos="flip-left" src="./Multimedia/premium.png" class=" col-md-2" alt="premium" title="premium">
+        <img data-aos="flip-left" src="./Multimedia/organico.png" class=" col-md-2" alt="organico" title="organico">
+        <img data-aos="flip-left" src="./Multimedia/crueltyfree.png" class=" col-md-2" alt="crueltyfree" title="crueltyfree">
         <img src="" class="col-md-1" alt="">
-        <img data-aos="flip-left" src="./Multimedia/sustentable.png" class="franja col-md-2" alt="Sustentable" title="sustentable">
-        <img src="" class="col-md-1" alt="">
-        <img data-aos="flip-left" src="./Multimedia/Caracteristicas2.png" class="franja col-md-2" alt="Natural" title="ingredientes Naturales">
-        <img src="" class="col-md-1" alt="">
-        <img data-aos="flip-left" src="./Multimedia/Caracteristicas3.png" class="franja col-md-2" alt="ecofrendly" title="sustentable y artensanal">
-        <img src="" class="col-md-1" alt="">
-        <img src="" class="col-md-1" alt="">
-
+        <h2 class="titulobeneficios">Pureza y Calidad Premium</h2>
+      </div>
     </div>
 </div>
 </section>
@@ -146,13 +146,28 @@
       </div>
     </div>
   </section>
-<section class="dudas">
+  <!-- Dudas -->
+<section class="container-fluid dud">
+  <div class="row">
+  <div class="imagendudas col-md-4">
+    <img src="./Multimedia/iso-oscuro.png" alt="isologo">
+  </div>
+  <div class="dudas col-md-4">
     <h2>Tenes Dudas?,</h2>
     <a href="Paginas/Contacto.html"><h3>Contactanos</h3></a>
-    <a class="irarriba" href="#arriba"><i class="bi bi-arrow-up-circle"></i><a>
+    <a class="irarriba" href="#arriba"><i class="bi bi-arrow-up-circle"></i></a>
+    </div>
+    <div class="cientif col-md-4">
+    <img src="./Multimedia/Researchers-pana.svg" alt="dibujocientificos">
+    </div>
+  </div>
 </section>
-<footer class="footer" id="finalfooter">
-    <img class="logoFooter" src="./Multimedia/Logo_head.png" alt="Aceite">
+<!-- footer -->
+<footer class="footercon" id="finalfooter">
+  <div class="redesFlotantes">
+    <a href="#"> <img src="Multimedia/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="Multimedia/instagram.png" alt="instagram"></a>
+</div>
     <nav class="menuFooter">
     <ul>
     <li>Home</li>
@@ -162,10 +177,7 @@
     <li><a href="./Paginas/Contacto.html">Contacto</a></li>
     </ul>
 </nav>
-<div class="redesFlotantes">
-        <a href="#"> <img src="Multimedia/facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="Multimedia/instagram.png" alt="instagram"></a>
-    </div>
+
     <div class="whatsapp">
         <a href="#"><img src="Multimedia/whatsapp.png" alt="whatsapp"></a>
     </div>
@@ -178,7 +190,7 @@
 <script>
   AOS.init({
     easing: 'ease-out-back',
-    duration: 2000
+    duration: 1700
   });
 </script>
 </body>
