@@ -442,12 +442,12 @@
   font-size: x-large;
   font-weight: 600;
   text-align: center;
-  color: #14281dff;
+  color: #f1f5f2ff;
   font-size: 2.5rem;
   font-family: "Playfair Display", serif; }
 
 .noscat {
-  background-color: #c2a878; }
+  background-color: rgba(194, 168, 120, 0.558); }
 
 .botonnoscat {
   margin-top: 30rem; }
