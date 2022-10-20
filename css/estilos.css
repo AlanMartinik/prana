@@ -406,12 +406,51 @@
   padding: 1rem; }
 
 .cardfaqs {
-  background-color: #c2a878; }
+  background-color: #f1f5f2ff; }
   .cardfaqs h5 {
-    color: #f1f5f2ff; }
+    color: #14281dff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    background-color: #c2a878;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem; }
   .cardfaqs p {
-    color: #f1f5f2ff;
-    font-family: "Open Sans"; }
+    color: #14281dff;
+    font-family: "Open Sans";
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem; }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.noscatalogo {
+  background-image: url(/Multimedia/fondonoscat.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5rem; }
+
+.tituloconocenos {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: x-large;
+  font-weight: 600;
+  text-align: center;
+  color: #14281dff;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif; }
+
+.noscat {
+  background-color: #c2a878; }
+
+.botonnoscat {
+  margin-top: 30rem; }
 
 .headfaq h1 {
   font-style: italic;
