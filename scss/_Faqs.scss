@@ -1,4 +1,5 @@
 .headfaq h1 {
+  font-size: 4rem;
   font-style: italic;
   text-align: center;
   color: $secundario;
@@ -12,8 +13,9 @@
   color: $primario;
   --bs-accordion-btn-focus-border-color: #c2a878ff;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25remrgba (13, 110, 253, 0.25);
-  --bs-accordion-active-color: #c2a878ff;
-  --bs-accordion-active-bg: #355834ff;
+  --bs-accordion-active-color: #f1f5f2ff;
+  --bs-accordion-active-bg: #525e39;
+  font-family: "Playfair Display", serif;
 }
 .accordion-item {
   color: $secundarioter;
@@ -25,4 +27,53 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+.imgdudas {
+  padding-bottom: 30rem;
+  object-fit: cover;
+  background-image: url(../Multimedia/fondotabla2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactofaqs {
+  h5 {
+    padding-top: 2rem;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    padding-bottom: 2rem;
+  }
+  p {
+    font-family: "Open Sans";
+    font-size: 1.2rem;
+    padding: 3rem;
+  }
+  a {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 1.3rem;
+  }
+}
+.productos {
+  background-image: url(/Multimedia/milesproductos.jpeg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30rem;
+}
+.milesproductos {
+  background-color: rgba(20, 40, 29, 0.36);
+  p {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-size: 2rem;
+  }
+  a {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
 }
