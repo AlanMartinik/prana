@@ -184,41 +184,6 @@
   .cientif img {
     width: 20rem; }
 
-.dudas {
-  padding-top: 3rem;
-  background-color: #f1f5f2ff;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .dudas h2 {
-    color: #14281dff;
-    padding-bottom: 1rem; }
-  .dudas h3 {
-    font-family: "open sans";
-    color: #355834ff;
-    padding-bottom: 2rem;
-    font-weight: 600;
-    background-color: #f1f5f2ff;
-    transition: all 0.5s; }
-    .dudas h3:hover {
-      color: #c2a878;
-      /* background-color: $primario; */ }
-  .dudas a {
-    text-decoration: none; }
-  .dudas i {
-    font-size: 3rem;
-    color: #14281dff;
-    /*     border-top: Solid 3px #14281dff;
-    border-bottom: Solid 3px #14281dff;
-    border-left: solid 3px #14281dff;
-    border-right: solid 3px #14281dff; */
-    transition: all 1s; }
-    .dudas i:hover {
-      color: #c2a878;
-      font-size: 3.3rem;
-      /*       background-color: #f1f5f2ff;
- */ }
-
 .gridNosotros {
   font-family: "Playfair Display", serif;
   /*   display: grid;
@@ -230,7 +195,7 @@
 .fotonosotros1 {
   grid-area: img1; }
 
-.textonosotros1, .textonosotros4 {
+.textonosotros1, .textonosotros3, .textonosotros4 {
   grid-area: text1; }
 
 .fotonosotros2 {
@@ -262,35 +227,23 @@
     font-size: 5rem; }
 
 /* Textos Nosotros */
-.textonosotros1, .textonosotros4 {
+.textonosotros1, .textonosotros3, .textonosotros4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #14281dff;
   background-color: #f1f5f2ff;
   padding: 3rem; }
-  .textonosotros1 h2, .textonosotros4 h2 {
+  .textonosotros1 h2, .textonosotros3 h2, .textonosotros4 h2 {
     font-family: "Playfair Display", serif;
-    color: #14281dff;
+    color: #c2a878;
     padding-bottom: 3rem;
     font-style: italic;
     animation-name: aparecertitulo;
     animation-duration: 2s;
     animation-timing-function: linear; }
-  .textonosotros1 p, .textonosotros4 p {
+  .textonosotros1 p, .textonosotros3 p, .textonosotros4 p {
     font-family: "open sans"; }
-
-@keyframes aparecertitulo {
-  0% {
-    opacity: 100%; }
-  25% {
-    opacity: 25%; }
-  50% {
-    opacity: 50%; }
-  75% {
-    opacity: 75%; }
-  100% {
-    opacity: 100%; } }
 
 .textonosotros2 {
   display: flex;
@@ -300,7 +253,8 @@
   background-color: #f1f5f2ff;
   padding: 3rem; }
   .textonosotros2 h2 {
-    color: #14281dff;
+    font-family: "Playfair Display", serif;
+    color: #c2a878;
     padding-bottom: 3rem;
     font-style: italic;
     animation-name: aparecertitulo;
@@ -310,11 +264,11 @@
     font-family: "open sans"; }
 
 .textonosotros3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #14281dff;
-  background-color: #f1f5f2ff;
+  /*   display: map-get($textos, display);
+  flex-direction: map-get($textos, direccion);
+  justify-content: map-get($textos, centrado);
+  color: map-get($textos, color);
+  background-color: map-get($textos, fondo); */
   padding: 3rem; }
   .textonosotros3 p {
     font-family: "open sans"; }
@@ -341,6 +295,18 @@
   .textonosotros4 p {
     font-family: "open sans"; }
 
+@keyframes aparecertitulo {
+  0% {
+    opacity: 100%; }
+  25% {
+    opacity: 25%; }
+  50% {
+    opacity: 50%; }
+  75% {
+    opacity: 75%; }
+  100% {
+    opacity: 100%; } }
+
 .botonCatalogoNos {
   text-decoration: none; }
   .botonCatalogoNos h2 {
@@ -356,6 +322,10 @@
 .fotonosotros1 {
   display: flex;
   object-fit: cover;
+  background-image: url(../Multimedia/Foto1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
@@ -376,6 +346,10 @@
 .fotonosotros2 {
   display: flex;
   object-fit: cover;
+  background-image: url(../Multimedia/Foto2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
@@ -384,6 +358,10 @@
 .fotonosotros3 {
   display: flex;
   object-fit: cover;
+  background-image: url(../Multimedia/Foto3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear; }
@@ -391,22 +369,27 @@
 .fotonosotros4 {
   display: flex;
   object-fit: cover;
+  background-image: url(../Multimedia/Foto4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear; }
 
-.fotonosotros1 img {
-  width: 100%; }
-
+/* .fotonosotros1 img {
+  width: 100%;
+}
 .fotonosotros2 img {
-  width: 100%; }
-
+  width: 100%;
+}
 .fotonosotros3 img {
-  width: 100%; }
-
+  width: 100%;
+}
 .fotonosotros4 img {
-  width: 100%; }
-
+  width: 100%;
+}
+ */
 .headcatalogo h1 {
   font-size: 5rem;
   padding: 1rem;
@@ -573,6 +556,41 @@ body {
   font-size: large;
   font-weight: 600;
   background-color: #c2a878; }
+
+.dudas {
+  padding-top: 3rem;
+  background-color: #f1f5f2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .dudas h2 {
+    color: #14281dff;
+    padding-bottom: 1rem; }
+  .dudas h3 {
+    font-family: "open sans";
+    color: #355834ff;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    background-color: #f1f5f2ff;
+    transition: all 0.5s; }
+    .dudas h3:hover {
+      color: #c2a878;
+      /* background-color: $primario; */ }
+  .dudas a {
+    text-decoration: none; }
+  .dudas i {
+    font-size: 3rem;
+    color: #14281dff;
+    /*     border-top: Solid 3px #14281dff;
+    border-bottom: Solid 3px #14281dff;
+    border-left: solid 3px #14281dff;
+    border-right: solid 3px #14281dff; */
+    transition: all 1s; }
+    .dudas i:hover {
+      color: #c2a878;
+      font-size: 3.3rem;
+      /*       background-color: #f1f5f2ff;
+ */ }
 
 /* Index */
 @media (max-width: 576px) {

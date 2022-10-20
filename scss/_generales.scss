@@ -90,3 +90,45 @@ body {
   font-weight: 600;
   background-color: $secundario;
 }
+
+.dudas {
+  padding-top: 3rem;
+  background-color: $secundarioter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    color: $primario;
+    padding-bottom: 1rem;
+  }
+  h3 {
+    font-family: "open sans";
+    color: $primariosec;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    background-color: $secundarioter;
+    transition: all 0.5s;
+    &:hover {
+      color: $secundario;
+      /* background-color: $primario; */
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  i {
+    font-size: 3rem;
+    color: $primario;
+    /*     border-top: Solid 3px #14281dff;
+    border-bottom: Solid 3px #14281dff;
+    border-left: solid 3px #14281dff;
+    border-right: solid 3px #14281dff; */
+    transition: all 1s;
+    &:hover {
+      color: $secundario;
+      font-size: 3.3rem;
+      /*       background-color: #f1f5f2ff;
+ */
+    }
+  }
+}

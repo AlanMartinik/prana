@@ -54,13 +54,73 @@
   padding: 3rem;
   h2 {
     font-family: "Playfair Display", serif;
-    color: $primario;
+    color: $secundario;
     padding-bottom: 3rem;
     font-style: italic;
     animation-name: aparecertitulo;
     animation-duration: 2s;
     animation-timing-function: linear;
   }
+  p {
+    font-family: "open sans";
+  }
+}
+
+.textonosotros2 {
+  display: map-get($textos, display);
+  flex-direction: map-get($textos, direccion);
+  justify-content: map-get($textos, centrado);
+  color: map-get($textos, color);
+  background-color: map-get($textos, fondo);
+  padding: 3rem;
+  h2 {
+    font-family: "Playfair Display", serif;
+    color: $secundario;
+    padding-bottom: 3rem;
+    font-style: italic;
+    animation-name: aparecertitulo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+  p {
+    font-family: "open sans";
+  }
+}
+.textonosotros3 {
+  /*   display: map-get($textos, display);
+  flex-direction: map-get($textos, direccion);
+  justify-content: map-get($textos, centrado);
+  color: map-get($textos, color);
+  background-color: map-get($textos, fondo); */
+  @extend .textonosotros1;
+
+  padding: 3rem;
+  p {
+    font-family: "open sans";
+  }
+  a {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(53, 88, 52, 0.721);
+    color: $primario;
+    font-size: large;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    &:hover {
+      color: $secundarioter;
+    }
+  }
+}
+.textonosotros4 {
+  @extend .textonosotros1;
+  /*   display: map-get($textnosotros, display);
+  flex-direction: map-get($textnosotros, direccion);
+  justify-content: map-get($textnosotros, centrado);
+  color: map-get($textnosotros, color);
+  background-color: map-get($textnosotros, fondo); */
+  text-align: center;
+  align-items: center;
+  padding: 3rem;
   p {
     font-family: "open sans";
   }
@@ -82,64 +142,6 @@
     opacity: 100%;
   }
 }
-.textonosotros2 {
-  display: map-get($textos, display);
-  flex-direction: map-get($textos, direccion);
-  justify-content: map-get($textos, centrado);
-  color: map-get($textos, color);
-  background-color: map-get($textos, fondo);
-  padding: 3rem;
-  h2 {
-    color: $primario;
-    padding-bottom: 3rem;
-    font-style: italic;
-    animation-name: aparecertitulo;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-  }
-  p {
-    font-family: "open sans";
-  }
-}
-.textonosotros3 {
-  display: map-get($textos, display);
-  flex-direction: map-get($textos, direccion);
-  justify-content: map-get($textos, centrado);
-  color: map-get($textos, color);
-  background-color: map-get($textos, fondo);
-  padding: 3rem;
-  p {
-    font-family: "open sans";
-  }
-  a {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: rgba(53, 88, 52, 0.721);
-    color: $primario;
-    font-size: large;
-    text-decoration: none;
-    font-family: "Playfair Display", serif;
-
-    &:hover {
-      color: $secundarioter;
-    }
-  }
-}
-.textonosotros4 {
-  @extend .textonosotros1;
-  /*   display: map-get($textnosotros, display);
-  flex-direction: map-get($textnosotros, direccion);
-  justify-content: map-get($textnosotros, centrado);
-  color: map-get($textnosotros, color);
-  background-color: map-get($textnosotros, fondo); */
-  text-align: center;
-  align-items: center;
-  padding: 3rem;
-  p {
-    font-family: "open sans";
-  }
-}
-
 .botonCatalogoNos {
   text-decoration: none;
   h2 {
@@ -157,6 +159,10 @@
 .fotonosotros1 {
   display: flex;
   object-fit: cover;
+  background-image: url(../Multimedia/Foto1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
@@ -182,6 +188,10 @@
 .fotonosotros2 {
   display: flex;
   object-fit: cover;
+  background-image: url(../Multimedia/Foto2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
@@ -190,6 +200,10 @@
 .fotonosotros3 {
   display: flex;
   object-fit: cover;
+  background-image: url(../Multimedia/Foto3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
@@ -197,11 +211,15 @@
 .fotonosotros4 {
   display: flex;
   object-fit: cover;
+  background-image: url(../Multimedia/Foto4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   animation-name: aparecer;
   animation-duration: 1.5s;
   animation-timing-function: linear;
 }
-.fotonosotros1 img {
+/* .fotonosotros1 img {
   width: 100%;
 }
 .fotonosotros2 img {
@@ -213,3 +231,4 @@
 .fotonosotros4 img {
   width: 100%;
 }
+ */
