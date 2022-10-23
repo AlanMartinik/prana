@@ -409,12 +409,11 @@
   background-color: #f1f5f2ff; }
   .cardfaqs h5 {
     color: #14281dff;
-    font-weight: 700;
+    font-weight: bold;
     font-family: "Open Sans";
-    background-color: #c2a878;
     padding: 0.5rem;
     border-radius: 0.3rem;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
   .cardfaqs p {
     color: #14281dff;
     font-family: "Open Sans";
@@ -506,7 +505,7 @@
 .productos {
   background-image: url(/Multimedia/milesproductos.jpeg);
   height: 100%;
-  background-attachment: fixed;
+  background-attachment: initial;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
