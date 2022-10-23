@@ -6,10 +6,23 @@
   .carousel {
     width: 50%;
   }
+
+  .benef img {
+    width: 20%;
+  }
+
+  .textfaqs {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .verfaqs {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 /* Catalogo */
 @media (max-width: 576px) {
@@ -19,14 +32,7 @@
 }
 /* !Tablet NOSOTROS */
 @media (max-width: 768px) {
-  .gridNosotros {
-    @include grid(grid, 1fr 1fr 1fr 1fr);
-
-    grid-template-areas:
-      "img1 text1 img2 text4"
-      "text2 img3 text3 img4";
-
-    /*     .fotonosotros1 {
+  /*     .fotonosotros1 {
       display: block;
       object-fit: cover;
     }
@@ -50,20 +56,20 @@
       }
     }
   } */
-  }
-
-  .footer {
-    flex-direction: column;
-    display: flex;
-    background-color: $secundarioter;
-    text-align: center;
-  }
 }
+
+.footer {
+  flex-direction: column;
+  display: flex;
+  background-color: $secundarioter;
+  text-align: center;
+}
+
 /* !MOBILE NOSOTROS */
 @media (max-width: 576px) {
   .gridNosotros {
-    @include grid(grid, 1fr);
-
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "img1"
       "text1"
@@ -75,12 +81,21 @@
       "text4";
   }
 
-  .footer {
+  .footercon {
     display: flex;
     flex-direction: column;
     background-color: $secundarioter;
     text-align: center;
   }
+  .menuFooter {
+    padding-right: 2rem;
+  }
+
+  .menuFooter ul {
+    display: flex;
+    flex-direction: column;
+  }
+
   .textonosotros3 a {
     padding: 0.1rem;
     font-size: large;

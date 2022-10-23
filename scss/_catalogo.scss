@@ -46,25 +46,23 @@
 
 .noscatalogo {
   background-image: url(/Multimedia/fondonoscat.jpeg);
+  backdrop-filter: initial;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 }
 .tituloconocenos {
-  padding-top: 1rem;
+  padding-top: 15rem;
   padding-bottom: 1rem;
-  font-size: x-large;
-  font-weight: 600;
+  font-size: 6rem;
+  font-weight: bolder;
   text-align: center;
   color: $secundarioter;
-  font-size: 2.5rem;
   font-family: "Playfair Display", serif;
 }
-.noscat {
-  background-color: rgba(194, 168, 120, 0.558);
-}
+
 .botonnoscat {
-  margin-top: 30rem;
+  margin-top: 8rem;
 }
