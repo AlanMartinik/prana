@@ -107,3 +107,8 @@
     font-size: large;
   }
 }
+@media (max-width: 576px) {
+  .productos {
+    background-attachment: initial;
+  }
+}

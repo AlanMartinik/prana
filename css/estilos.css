@@ -505,7 +505,7 @@
 .productos {
   background-image: url(/Multimedia/milesproductos.jpeg);
   height: 100%;
-  background-attachment: initial;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -754,3 +754,7 @@ body {
   .textonosotros3 a {
     padding: 0.1rem;
     font-size: large; } }
+
+@media (max-width: 576px) {
+  .productos {
+    background-attachment: initial; } }
