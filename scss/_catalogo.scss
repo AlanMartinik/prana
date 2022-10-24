@@ -44,8 +44,9 @@
 }
 
 .noscatalogo {
-  background-image: url(/Multimedia/fondonoscat.jpeg);
+  background-image: url(/Multimedia/fondonoscat.webp);
   backdrop-filter: initial;
+  object-fit: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

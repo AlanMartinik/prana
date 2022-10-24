@@ -1,12 +1,11 @@
 /* Index */
 @media (max-width: 576px) {
-  .moneda {
-    width: 40%;
-  }
   .carousel {
     width: 90%;
   }
-
+  .beneficios {
+    background-attachment: local;
+  }
   .benef img {
     width: 20%;
   }
@@ -24,7 +23,21 @@
 .verfaqs {
   margin-top: 1rem;
 }
+@media (max-width: 768px) {
+  .benef img {
+    width: 20%;
+  }
+  .carousel {
+    width: 90%;
+  }
+}
 /* Catalogo */
+@media (max-width: 768px) {
+  .cardfaqs {
+    width: 100rem;
+  }
+}
+
 @media (max-width: 576px) {
   .cardfaqs {
     width: 90%;
@@ -35,33 +48,6 @@
   .noscatalogo {
     background-attachment: local;
   }
-}
-/* !Tablet NOSOTROS */
-@media (max-width: 768px) {
-  /*     .fotonosotros1 {
-      display: block;
-      object-fit: cover;
-    }
-    .fotonosotros2 {
-      display: block;
-      object-fit: cover;
-    }
-    .fotonosotros3 {
-      display: block;
-      object-fit: cover;
-      width: 100%;
-    }
-    .fotonosotros4 {
-      display: block;
-      object-fit: cover;
-    }
-    .textonosotros3{
-      .fotonosotros2 {
-        display: block;
-        object-fit: cover;
-      }
-    }
-  } */
 }
 
 .footer {
@@ -109,6 +95,6 @@
 }
 @media (max-width: 576px) {
   .productos {
-    background-attachment: initial;
+    background-attachment: local;
   }
 }

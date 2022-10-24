@@ -31,7 +31,7 @@
 .imgdudas {
   padding-bottom: 30rem;
   object-fit: cover;
-  background-image: url(../Multimedia/fondotabla2.jpeg);
+  background-image: url(../Multimedia/fondotabla2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,8 +56,9 @@
   }
 }
 .productos {
-  background-image: url(/Multimedia/milesproductos.jpeg);
+  background-image: url(/Multimedia/milesproductos.webp);
   height: 100%;
+  object-fit: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
